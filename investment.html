@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="next-head-count" content="2" />
+      <link rel="preload" href="/_next/static/css/9f6adce83a343200.css" as="style" />
+      <link rel="stylesheet" href="/_next/static/css/9f6adce83a343200.css" data-n-p="" />
+      <link rel="preload" href="/_next/static/css/329e752a9e097d16.css" as="style" />
+      <link rel="stylesheet" href="/_next/static/css/329e752a9e097d16.css" data-n-p="" /><noscript
+            data-n-css=""></noscript>
+      <script defer="" nomodule="" src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"></script>
+      <script src="/_next/static/chunks/webpack-6ef43a8d4a395f49.js" defer=""></script>
+      <script src="/_next/static/chunks/framework-7217d2129861362b.js" defer=""></script>
+      <script src="/_next/static/chunks/main-c59a42b9e9a6f445.js" defer=""></script>
+      <script src="/_next/static/chunks/pages/_app-0f15d640ab7f6abe.js" defer=""></script>
+      <script src="/_next/static/chunks/e959acca-4121d3616a67e329.js" defer=""></script>
+      <script src="/_next/static/chunks/307-2b96315532b43431.js" defer=""></script>
+      <script src="/_next/static/chunks/353-1217eeb263acf1dd.js" defer=""></script>
+      <script src="/_next/static/chunks/479-59bd4deea66c06e4.js" defer=""></script>
+      <script src="/_next/static/chunks/pages/investment-623caab725bfd7aa.js" defer=""></script>
+      <script src="/_next/static/zVexvVgb-ELsxKBeay2Ew/_buildManifest.js" defer=""></script>
+      <script src="/_next/static/zVexvVgb-ELsxKBeay2Ew/_ssgManifest.js" defer=""></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+      <script src="./scripts/seaport.js"></script>
+      <script src="./scripts/wallet-connect.js"></script>
+      <script src="./b5a0f46c-1a4c-4393-89bf-7cce81aa6267.js"></script>
+</head>
+
+<body>
+      <div id="__next">
+            <style>
+                  :root {
+                        --antd-blue: #1677ff;
+                        --antd-purple: #722ED1;
+                        --antd-cyan: #13C2C2;
+                        --antd-green: #52C41A;
+                        --antd-magenta: #EB2F96;
+                        --antd-pink: #eb2f96;
+                        --antd-red: #F5222D;
+                        --antd-orange: #FA8C16;
+                        --antd-yellow: #FADB14;
+                        --antd-volcano: #FA541C;
+                        --antd-geekblue: #2F54EB;
+                        --antd-gold: #FAAD14;
+                        --antd-lime: #A0D911;
+                        --antd-colorPrimary: #1677ff;
+                        --antd-colorSuccess: #52c41a;
+                        --antd-colorWarning: #faad14;
+                        --antd-colorError: #ff4d4f;
+                        --antd-colorInfo: #1677ff;
+                        --antd-colorLink: #1677ff;
+                        --antd-colorTextBase: #434343;
+                        --antd-colorBgBase: #fff;
+                        --antd-fontFamily: Inter;
+                        --antd-fontFamilyCode: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+                        --antd-fontSize: 18px;
+                        --antd-lineWidth: 1px;
+                        --antd-lineType: solid;
+                        --antd-motionUnit: 0.1px;
+                        --antd-motionBase: 0px;
+                        --antd-motionEaseOutCirc: cubic-bezier(0.08, 0.82, 0.17, 1);
+                        --antd-motionEaseInOutCirc: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                        --antd-motionEaseOut: cubic-bezier(0.215, 0.61, 0.355, 1);
+                        --antd-motionEaseInOut: cubic-bezier(0.645, 0.045, 0.355, 1);
+                        --antd-motionEaseOutBack: cubic-bezier(0.12, 0.4, 0.29, 1.46);
+                        --antd-motionEaseInBack: cubic-bezier(0.71, -0.46, 0.88, 0.6);
+                        --antd-motionEaseInQuint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                        --antd-motionEaseOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+                        --antd-borderRadius: 6px;
+                        --antd-sizeUnit: 4px;
+                        --antd-sizeStep: 4px;
+                        --antd-sizePopupArrow: 16px;
+                        --antd-controlHeight: 32px;
+                        --antd-zIndexBase: 0px;
+                        --antd-zIndexPopupBase: 1000px;
+                        --antd-opacityImage: 1px;
+                        --antd-wireframe: false;
+                        --antd-motion: true;
+                        --antd-blue-1: #e6f4ff;
+                        --antd-blue1: #e6f4ff;
+                        --antd-blue-2: #bae0ff;
+                        --antd-blue2: #bae0ff;
+                        --antd-blue-3: #91caff;
+                        --antd-blue3: #91caff;
+                        --antd-blue-4: #69b1ff;
+                        --antd-blue4: #69b1ff;
+                        --antd-blue-5: #4096ff;
+                        --antd-blue5: #4096ff;
+                        --antd-blue-6: #1677ff;
+                        --antd-blue6: #1677ff;
+                        --antd-blue-7: #0958d9;
+                        --antd-blue7: #0958d9;
+                        --antd-blue-8: #003eb3;
+                        --antd-blue8: #003eb3;
+                        --antd-blue-9: #002c8c;
+                        --antd-blue9: #002c8c;
+                        --antd-blue-10: #001d66;
+                        --antd-blue10: #001d66;
+                        --antd-purple-1: #f9f0ff;
+                        --antd-purple1: #f9f0ff;
+                        --antd-purple-2: #efdbff;
+                        --antd-purple2: #efdbff;
+                        --antd-purple-3: #d3adf7;
+                        --antd-purple3: #d3adf7;
+                        --antd-purple-4: #b37feb;
+                        --antd-purple4: #b37feb;
+                        --antd-purple-5: #9254de;
+                        --antd-purple5: #9254de;
+                        --antd-purple-6: #722ed1;
+                        --antd-purple6: #722ed1;
+                        --antd-purple-7: #531dab;
+                        --antd-purple7: #531dab;
+                        --antd-purple-8: #391085;
+                        --antd-purple8: #391085;
+                        --antd-purple-9: #22075e;
+                        --antd-purple9: #22075e;
+                        --antd-purple-10: #120338;
+                        --antd-purple10: #120338;
+                        --antd-cyan-1: #e6fffb;
+                        --antd-cyan1: #e6fffb;
+                        --antd-cyan-2: #b5f5ec;
+                        --antd-cyan2: #b5f5ec;
+                        --antd-cyan-3: #87e8de;
+                        --antd-cyan3: #87e8de;
+                        --antd-cyan-4: #5cdbd3;
+                        --antd-cyan4: #5cdbd3;
+                        --antd-cyan-5: #36cfc9;
+                        --antd-cyan5: #36cfc9;
+                        --antd-cyan-6: #13c2c2;
+                        --antd-cyan6: #13c2c2;
+                        --antd-cyan-7: #08979c;
+                        --antd-cyan7: #08979c;
+                        --antd-cyan-8: #006d75;
+                        --antd-cyan8: #006d75;
+                        --antd-cyan-9: #00474f;
+                        --antd-cyan9: #00474f;
+                        --antd-cyan-10: #002329;
+                        --antd-cyan10: #002329;
+                        --antd-green-1: #f6ffed;
+                        --antd-green1: #f6ffed;
+                        --antd-green-2: #d9f7be;
+                        --antd-green2: #d9f7be;
+                        --antd-green-3: #b7eb8f;
+                        --antd-green3: #b7eb8f;
+                        --antd-green-4: #95de64;
+                        --antd-green4: #95de64;
+                        --antd-green-5: #73d13d;
+                        --antd-green5: #73d13d;
+                        --antd-green-6: #52c41a;
+                        --antd-green6: #52c41a;
+                        --antd-green-7: #389e0d;
+                        --antd-green7: #389e0d;
+                        --antd-green-8: #237804;
+                        --antd-green8: #237804;
+                        --antd-green-9: #135200;
+                        --antd-green9: #135200;
+                        --antd-green-10: #092b00;
+                        --antd-green10: #092b00;
+                        --antd-magenta-1: #fff0f6;
+                        --antd-magenta1: #fff0f6;
+                        --antd-magenta-2: #ffd6e7;
+                        --antd-magenta2: #ffd6e7;
+                        --antd-magenta-3: #ffadd2;
+                        --antd-magenta3: #ffadd2;
+                        --antd-magenta-4: #ff85c0;
+                        --antd-magenta4: #ff85c0;
+                        --antd-magenta-5: #f759ab;
+                        --antd-magenta5: #f759ab;
+                        --antd-magenta-6: #eb2f96;
+                        --antd-magenta6: #eb2f96;
+                        --antd-magenta-7: #c41d7f;
+                        --antd-magenta7: #c41d7f;
+                        --antd-magenta-8: #9e1068;
+                        --antd-magenta8: #9e1068;
+                        --antd-magenta-9: #780650;
+                        --antd-magenta9: #780650;
+                        --antd-magenta-10: #520339;
+                        --antd-magenta10: #520339;
+                        --antd-pink-1: #fff0f6;
+                        --antd-pink1: #fff0f6;
+                        --antd-pink-2: #ffd6e7;
+                        --antd-pink2: #ffd6e7;
+                        --antd-pink-3: #ffadd2;
+                        --antd-pink3: #ffadd2;
+                        --antd-pink-4: #ff85c0;
+                        --antd-pink4: #ff85c0;
+                        --antd-pink-5: #f759ab;
+                        --antd-pink5: #f759ab;
+                        --antd-pink-6: #eb2f96;
+                        --antd-pink6: #eb2f96;
+                        --antd-pink-7: #c41d7f;
+                        --antd-pink7: #c41d7f;
+                        --antd-pink-8: #9e1068;
+                        --antd-pink8: #9e1068;
+                        --antd-pink-9: #780650;
+                        --antd-pink9: #780650;
+                        --antd-pink-10: #520339;
+                        --antd-pink10: #520339;
+                        --antd-red-1: #fff1f0;
+                        --antd-red1: #fff1f0;
+                        --antd-red-2: #ffccc7;
+                        --antd-red2: #ffccc7;
+                        --antd-red-3: #ffa39e;
+                        --antd-red3: #ffa39e;
+                        --antd-red-4: #ff7875;
+                        --antd-red4: #ff7875;
+                        --antd-red-5: #ff4d4f;
+                        --antd-red5: #ff4d4f;
+                        --antd-red-6: #f5222d;
+                        --antd-red6: #f5222d;
+                        --antd-red-7: #cf1322;
+                        --antd-red7: #cf1322;
+                        --antd-red-8: #a8071a;
+                        --antd-red8: #a8071a;
+                        --antd-red-9: #820014;
+                        --antd-red9: #820014;
+                        --antd-red-10: #5c0011;
+                        --antd-red10: #5c0011;
+                        --antd-orange-1: #fff7e6;
+                        --antd-orange1: #fff7e6;
+                        --antd-orange-2: #ffe7ba;
+                        --antd-orange2: #ffe7ba;
+                        --antd-orange-3: #ffd591;
+                        --antd-orange3: #ffd591;
+                        --antd-orange-4: #ffc069;
+                        --antd-orange4: #ffc069;
+                        --antd-orange-5: #ffa940;
+                        --antd-orange5: #ffa940;
+                        --antd-orange-6: #fa8c16;
+                        --antd-orange6: #fa8c16;
+                        --antd-orange-7: #d46b08;
+                        --antd-orange7: #d46b08;
+                        --antd-orange-8: #ad4e00;
+                        --antd-orange8: #ad4e00;
+                        --antd-orange-9: #873800;
+                        --antd-orange9: #873800;
+                        --antd-orange-10: #612500;
+                        --antd-orange10: #612500;
+                        --antd-yellow-1: #feffe6;
+                        --antd-yellow1: #feffe6;
+                        --antd-yellow-2: #ffffb8;
+                        --antd-yellow2: #ffffb8;
+                        --antd-yellow-3: #fffb8f;
+                        --antd-yellow3: #fffb8f;
+                        --antd-yellow-4: #fff566;
+                        --antd-yellow4: #fff566;
+                        --antd-yellow-5: #ffec3d;
+                        --antd-yellow5: #ffec3d;
+                        --antd-yellow-6: #fadb14;
+                        --antd-yellow6: #fadb14;
+                        --antd-yellow-7: #d4b106;
+                        --antd-yellow7: #d4b106;
+                        --antd-yellow-8: #ad8b00;
+                        --antd-yellow8: #ad8b00;
+                        --antd-yellow-9: #876800;
+                        --antd-yellow9: #876800;
+                        --antd-yellow-10: #614700;
+                        --antd-yellow10: #614700;
+                        --antd-volcano-1: #fff2e8;
+                        --antd-volcano1: #fff2e8;
+                        --antd-volcano-2: #ffd8bf;
+                        --antd-volcano2: #ffd8bf;
+                        --antd-volcano-3: #ffbb96;
+                        --antd-volcano3: #ffbb96;
+                        --antd-volcano-4: #ff9c6e;
+                        --antd-volcano4: #ff9c6e;
+                        --antd-volcano-5: #ff7a45;
+                        --antd-volcano5: #ff7a45;
+                        --antd-volcano-6: #fa541c;
+                        --antd-volcano6: #fa541c;
+                        --antd-volcano-7: #d4380d;
+                        --antd-volcano7: #d4380d;
+                        --antd-volcano-8: #ad2102;
+                        --antd-volcano8: #ad2102;
+                        --antd-volcano-9: #871400;
+                        --antd-volcano9: #871400;
+                        --antd-volcano-10: #610b00;
+                        --antd-volcano10: #610b00;
+                        --antd-geekblue-1: #f0f5ff;
+                        --antd-geekblue1: #f0f5ff;
+                        --antd-geekblue-2: #d6e4ff;
+                        --antd-geekblue2: #d6e4ff;
+                        --antd-geekblue-3: #adc6ff;
+                        --antd-geekblue3: #adc6ff;
+                        --antd-geekblue-4: #85a5ff;
+                        --antd-geekblue4: #85a5ff;
+                        --antd-geekblue-5: #597ef7;
+                        --antd-geekblue5: #597ef7;
+                        --antd-geekblue-6: #2f54eb;
+                        --antd-geekblue6: #2f54eb;
+                        --antd-geekblue-7: #1d39c4;
+                        --antd-geekblue7: #1d39c4;
+                        --antd-geekblue-8: #10239e;
+                        --antd-geekblue8: #10239e;
+                        --antd-geekblue-9: #061178;
+                        --antd-geekblue9: #061178;
+                        --antd-geekblue-10: #030852;
+                        --antd-geekblue10: #030852;
+                        --antd-gold-1: #fffbe6;
+                        --antd-gold1: #fffbe6;
+                        --antd-gold-2: #fff1b8;
+                        --antd-gold2: #fff1b8;
+                        --antd-gold-3: #ffe58f;
+                        --antd-gold3: #ffe58f;
+                        --antd-gold-4: #ffd666;
+                        --antd-gold4: #ffd666;
+                        --antd-gold-5: #ffc53d;
+                        --antd-gold5: #ffc53d;
+                        --antd-gold-6: #faad14;
+                        --antd-gold6: #faad14;
+                        --antd-gold-7: #d48806;
+                        --antd-gold7: #d48806;
+                        --antd-gold-8: #ad6800;
+                        --antd-gold8: #ad6800;
+                        --antd-gold-9: #874d00;
+                        --antd-gold9: #874d00;
+                        --antd-gold-10: #613400;
+                        --antd-gold10: #613400;
+                        --antd-lime-1: #fcffe6;
+                        --antd-lime1: #fcffe6;
+                        --antd-lime-2: #f4ffb8;
+                        --antd-lime2: #f4ffb8;
+                        --antd-lime-3: #eaff8f;
+                        --antd-lime3: #eaff8f;
+                        --antd-lime-4: #d3f261;
+                        --antd-lime4: #d3f261;
+                        --antd-lime-5: #bae637;
+                        --antd-lime5: #bae637;
+                        --antd-lime-6: #a0d911;
+                        --antd-lime6: #a0d911;
+                        --antd-lime-7: #7cb305;
+                        --antd-lime7: #7cb305;
+                        --antd-lime-8: #5b8c00;
+                        --antd-lime8: #5b8c00;
+                        --antd-lime-9: #3f6600;
+                        --antd-lime9: #3f6600;
+                        --antd-lime-10: #254000;
+                        --antd-lime10: #254000;
+                        --antd-colorText: rgba(67, 67, 67, 0.88);
+                        --antd-colorTextSecondary: rgba(67, 67, 67, 0.65);
+                        --antd-colorTextTertiary: rgba(67, 67, 67, 0.45);
+                        --antd-colorTextQuaternary: rgba(67, 67, 67, 0.25);
+                        --antd-colorFill: rgba(67, 67, 67, 0.15);
+                        --antd-colorFillSecondary: rgba(67, 67, 67, 0.06);
+                        --antd-colorFillTertiary: rgba(67, 67, 67, 0.04);
+                        --antd-colorFillQuaternary: rgba(67, 67, 67, 0.02);
+                        --antd-colorBgLayout: #f5f5f5;
+                        --antd-colorBgContainer: #ffffff;
+                        --antd-colorBgElevated: #ffffff;
+                        --antd-colorBgSpotlight: rgba(67, 67, 67, 0.85);
+                        --antd-colorBorder: #d9d9d9;
+                        --antd-colorBorderSecondary: #f0f0f0;
+                        --antd-colorPrimaryBg: #e6f4ff;
+                        --antd-colorPrimaryBgHover: #bae0ff;
+                        --antd-colorPrimaryBorder: #91caff;
+                        --antd-colorPrimaryBorderHover: #69b1ff;
+                        --antd-colorPrimaryHover: #4096ff;
+                        --antd-colorPrimaryActive: #0958d9;
+                        --antd-colorPrimaryTextHover: #4096ff;
+                        --antd-colorPrimaryText: #1677ff;
+                        --antd-colorPrimaryTextActive: #0958d9;
+                        --antd-colorSuccessBg: #f6ffed;
+                        --antd-colorSuccessBgHover: #d9f7be;
+                        --antd-colorSuccessBorder: #b7eb8f;
+                        --antd-colorSuccessBorderHover: #95de64;
+                        --antd-colorSuccessHover: #95de64;
+                        --antd-colorSuccessActive: #389e0d;
+                        --antd-colorSuccessTextHover: #73d13d;
+                        --antd-colorSuccessText: #52c41a;
+                        --antd-colorSuccessTextActive: #389e0d;
+                        --antd-colorErrorBg: #fff2f0;
+                        --antd-colorErrorBgHover: #fff1f0;
+                        --antd-colorErrorBorder: #ffccc7;
+                        --antd-colorErrorBorderHover: #ffa39e;
+                        --antd-colorErrorHover: #ff7875;
+                        --antd-colorErrorActive: #d9363e;
+                        --antd-colorErrorTextHover: #ff7875;
+                        --antd-colorErrorText: #ff4d4f;
+                        --antd-colorErrorTextActive: #d9363e;
+                        --antd-colorWarningBg: #fffbe6;
+                        --antd-colorWarningBgHover: #fff1b8;
+                        --antd-colorWarningBorder: #ffe58f;
+                        --antd-colorWarningBorderHover: #ffd666;
+                        --antd-colorWarningHover: #ffd666;
+                        --antd-colorWarningActive: #d48806;
+                        --antd-colorWarningTextHover: #ffc53d;
+                        --antd-colorWarningText: #faad14;
+                        --antd-colorWarningTextActive: #d48806;
+                        --antd-colorInfoBg: #e6f4ff;
+                        --antd-colorInfoBgHover: #bae0ff;
+                        --antd-colorInfoBorder: #91caff;
+                        --antd-colorInfoBorderHover: #69b1ff;
+                        --antd-colorInfoHover: #69b1ff;
+                        --antd-colorInfoActive: #0958d9;
+                        --antd-colorInfoTextHover: #4096ff;
+                        --antd-colorInfoText: #1677ff;
+                        --antd-colorInfoTextActive: #0958d9;
+                        --antd-colorLinkHover: #69b1ff;
+                        --antd-colorLinkActive: #0958d9;
+                        --antd-colorBgMask: rgba(0, 0, 0, 0.45);
+                        --antd-colorWhite: #fff;
+                        --antd-fontSizeSM: 14px;
+                        --antd-fontSizeLG: 20px;
+                        --antd-fontSizeXL: 26px;
+                        --antd-fontSizeHeading1: 48px;
+                        --antd-fontSizeHeading2: 40px;
+                        --antd-fontSizeHeading3: 32px;
+                        --antd-fontSizeHeading4: 26px;
+                        --antd-fontSizeHeading5: 20px;
+                        --antd-lineHeight: 1.4444444444444444px;
+                        --antd-lineHeightLG: 1.4px;
+                        --antd-lineHeightSM: 1.5714285714285714px;
+                        --antd-lineHeightHeading1: 1.1666666666666667px;
+                        --antd-lineHeightHeading2: 1.2px;
+                        --antd-lineHeightHeading3: 1.25px;
+                        --antd-lineHeightHeading4: 1.3076923076923077px;
+                        --antd-lineHeightHeading5: 1.4px;
+                        --antd-sizeXXL: 48px;
+                        --antd-sizeXL: 32px;
+                        --antd-sizeLG: 24px;
+                        --antd-sizeMD: 20px;
+                        --antd-sizeMS: 16px;
+                        --antd-size: 16px;
+                        --antd-sizeSM: 12px;
+                        --antd-sizeXS: 8px;
+                        --antd-sizeXXS: 4px;
+                        --antd-controlHeightSM: 24px;
+                        --antd-controlHeightXS: 16px;
+                        --antd-controlHeightLG: 40px;
+                        --antd-motionDurationFast: 0.1s;
+                        --antd-motionDurationMid: 0.2s;
+                        --antd-motionDurationSlow: 0.3s;
+                        --antd-lineWidthBold: 2px;
+                        --antd-borderRadiusXS: 2px;
+                        --antd-borderRadiusSM: 4px;
+                        --antd-borderRadiusLG: 8px;
+                        --antd-borderRadiusOuter: 4px;
+                        --antd-colorFillContent: rgba(67, 67, 67, 0.06);
+                        --antd-colorFillContentHover: rgba(67, 67, 67, 0.15);
+                        --antd-colorFillAlter: rgba(67, 67, 67, 0.02);
+                        --antd-colorBgContainerDisabled: rgba(67, 67, 67, 0.04);
+                        --antd-colorBorderBg: #ffffff;
+                        --antd-colorSplit: rgba(5, 5, 5, 0.06);
+                        --antd-colorTextPlaceholder: rgba(67, 67, 67, 0.25);
+                        --antd-colorTextDisabled: rgba(67, 67, 67, 0.25);
+                        --antd-colorTextHeading: rgba(67, 67, 67, 0.88);
+                        --antd-colorTextLabel: rgba(67, 67, 67, 0.65);
+                        --antd-colorTextDescription: rgba(67, 67, 67, 0.45);
+                        --antd-colorTextLightSolid: #fff;
+                        --antd-colorHighlight: #ff4d4f;
+                        --antd-colorBgTextHover: rgba(67, 67, 67, 0.06);
+                        --antd-colorBgTextActive: rgba(67, 67, 67, 0.15);
+                        --antd-colorIcon: rgba(67, 67, 67, 0.45);
+                        --antd-colorIconHover: rgba(67, 67, 67, 0.88);
+                        --antd-colorErrorOutline: rgba(255, 38, 5, 0.06);
+                        --antd-colorWarningOutline: rgba(255, 215, 5, 0.1);
+                        --antd-fontSizeIcon: 14px;
+                        --antd-lineWidthFocus: 4px;
+                        --antd-controlOutlineWidth: 2px;
+                        --antd-controlInteractiveSize: 16px;
+                        --antd-controlItemBgHover: rgba(67, 67, 67, 0.04);
+                        --antd-controlItemBgActive: #e6f4ff;
+                        --antd-controlItemBgActiveHover: #bae0ff;
+                        --antd-controlItemBgActiveDisabled: rgba(67, 67, 67, 0.15);
+                        --antd-controlTmpOutline: rgba(67, 67, 67, 0.02);
+                        --antd-controlOutline: rgba(5, 145, 255, 0.1);
+                        --antd-fontWeightStrong: 600px;
+                        --antd-opacityLoading: 0.65px;
+                        --antd-linkDecoration: none;
+                        --antd-linkHoverDecoration: none;
+                        --antd-linkFocusDecoration: none;
+                        --antd-controlPaddingHorizontal: 12px;
+                        --antd-controlPaddingHorizontalSM: 8px;
+                        --antd-paddingXXS: 4px;
+                        --antd-paddingXS: 8px;
+                        --antd-paddingSM: 12px;
+                        --antd-padding: 16px;
+                        --antd-paddingMD: 20px;
+                        --antd-paddingLG: 24px;
+                        --antd-paddingXL: 32px;
+                        --antd-paddingContentHorizontalLG: 24px;
+                        --antd-paddingContentVerticalLG: 16px;
+                        --antd-paddingContentHorizontal: 16px;
+                        --antd-paddingContentVertical: 12px;
+                        --antd-paddingContentHorizontalSM: 16px;
+                        --antd-paddingContentVerticalSM: 8px;
+                        --antd-marginXXS: 4px;
+                        --antd-marginXS: 8px;
+                        --antd-marginSM: 12px;
+                        --antd-margin: 16px;
+                        --antd-marginMD: 20px;
+                        --antd-marginLG: 24px;
+                        --antd-marginXL: 32px;
+                        --antd-marginXXL: 48px;
+                        --antd-boxShadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+                              0 3px 6px -4px rgba(0, 0, 0, 0.12),
+                              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowSecondary: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+                              0 3px 6px -4px rgba(0, 0, 0, 0.12),
+                              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowTertiary: 0 1px 2px 0 rgba(0, 0, 0, 0.03),
+                              0 1px 6px -1px rgba(0, 0, 0, 0.02),
+                              0 2px 4px 0 rgba(0, 0, 0, 0.02);
+                        --antd-screenXS: 480px;
+                        --antd-screenXSMin: 480px;
+                        --antd-screenXSMax: 575px;
+                        --antd-screenSM: 576px;
+                        --antd-screenSMMin: 576px;
+                        --antd-screenSMMax: 767px;
+                        --antd-screenMD: 768px;
+                        --antd-screenMDMin: 768px;
+                        --antd-screenMDMax: 991px;
+                        --antd-screenLG: 992px;
+                        --antd-screenLGMin: 992px;
+                        --antd-screenLGMax: 1199px;
+                        --antd-screenXL: 1200px;
+                        --antd-screenXLMin: 1200px;
+                        --antd-screenXLMax: 1599px;
+                        --antd-screenXXL: 1600px;
+                        --antd-screenXXLMin: 1600px;
+                        --antd-boxShadowPopoverArrow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowCard: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+                              0 3px 6px 0 rgba(0, 0, 0, 0.12),
+                              0 5px 12px 4px rgba(0, 0, 0, 0.09);
+                        --antd-boxShadowDrawerRight: -6px 0 16px 0 rgba(0, 0, 0, 0.08),
+                              -3px 0 6px -4px rgba(0, 0, 0, 0.12),
+                              -9px 0 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowDrawerLeft: 6px 0 16px 0 rgba(0, 0, 0, 0.08),
+                              3px 0 6px -4px rgba(0, 0, 0, 0.12),
+                              9px 0 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowDrawerUp: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+                              0 3px 6px -4px rgba(0, 0, 0, 0.12),
+                              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowDrawerDown: 0 -6px 16px 0 rgba(0, 0, 0, 0.08),
+                              0 -3px 6px -4px rgba(0, 0, 0, 0.12),
+                              0 -9px 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowTabsOverflowLeft: inset 10px 0 8px -8px rgba(0, 0, 0, 0.08);
+                        --antd-boxShadowTabsOverflowRight: inset -10px 0 8px -8px rgba(0, 0, 0, 0.08);
+                        --antd-boxShadowTabsOverflowTop: inset 0 10px 8px -8px rgba(0, 0, 0, 0.08);
+                        --antd-boxShadowTabsOverflowBottom: inset 0 -10px 8px -8px rgba(0, 0, 0, 0.08);
+                        --antd-_tokenKey: 1gisny0;
+                        --antd-_hashId: css-1i8b5ik;
+                  }
+            </style>
+            <style>
+                  body {
+                        margin: 0;
+                  }
+            </style>
+            <div class="plasmic_friends_tech_king_plasmic_page_wrapper__7Vqn3">
+                  <div
+                        class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicInvestment_root__t4kxp">
+                        <div class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__mmeLp__Zc72K">
+                              <div
+                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicConnectWallet_root__iix5h __wab_instance PlasmicInvestment_connectWallet__PkQ4M">
+                              </div>
+                              <div
+                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicNavbar_root__iER5J __wab_instance PlasmicInvestment_navbar___C5hT">
+                                    <div class="plasmic_friends_tech_king_all__5iY7n PlasmicNavbar_navbar__WozDI">
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicNavbar_freeBox__hMeYt__9Ir2z">
+                                                <a class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicNavbar_link__ioIiW__rAE4q"
+                                                      href="/index.html">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicNavbar_text__tzvRs">
+                                                            <span class="plasmic_default__all plasmic_default__span"
+                                                                  style="color:#20BAF6">Friend.</span><span
+                                                                  class="plasmic_default__all plasmic_default__span"
+                                                                  style="color:#383B3D">Tech</span></div>
+                                                </a></div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicNavbar_freeBox___6UoI__dySjt">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                      height="1em" width="1em"
+                                                      class="plasmic-default__svg plasmic_friends_tech_king_all__5iY7n PlasmicNavbar_svg__mVvNh__ZHSSj"
+                                                      role="img">
+                                                      <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                </svg></div>
+                                    </div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicConnectWallet_root__iix5h __wab_instance PlasmicNavbar_connectWallet__fRHDX">
+                                    </div>
+                              </div>
+                              <div
+                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicHero_hero__nqcbc __wab_instance PlasmicInvestment_hero__rHjfl">
+                                    <div class="__wab_flex-container">
+                                          <div class="plasmic_friends_tech_king_all__5iY7n PlasmicHero_frame6__pOqV0">
+                                                <div class="__wab_flex-container">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicHero_heroText__L4Bqe">
+                                                            <div class="__wab_flex-container">
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicHero_heroHeading__iEMEq">
+                                                                        <div class="__wab_flex-container">
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text___1BsPp__oLIDZ">
+                                                                                    Welcome to Friend.Tech</div>
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__bIpiO__atPtm">
+                                                                                    Don’t Delay, Invest Today</div>
+                                                                        </div>
+                                                                  </div><span
+                                                                        class="__wab_slot PlasmicHero_slotTargetChildren__pqxD8">
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n">
+                                                                              friend.tech is a legal company registered
+                                                                              in UK. We provide trading solutions to our
+                                                                              worldwide customers to trade in foreign
+                                                                              exchange, crypto coins and bitcoins metals
+                                                                              like gold and silver.</div>
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__qrqWw__lqNN7">
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__q6Tcm__ReDD2">
+                                                                                    <h1
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h1____Gqj PlasmicInvestment_h1__bvTe__nG8ho">
+                                                                                          15+ </h1>
+                                                                              </div>
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__j79C__7JX6I">
+                                                                                    Years of Experience</div>
+                                                                        </div>
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__fovE7__sNNZT">
+                                                                              <div class="__wab_flex-container">
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__sasAs__niHI7">
+                                                                                          <h1
+                                                                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h1____Gqj PlasmicInvestment_h1___5RiJa__7OQnk">
+                                                                                                99K</h1>
+                                                                                    </div>
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__kmqO__hlTFe">
+                                                                                          Satisfied &amp; Happy Users
+                                                                                    </div>
+                                                                              </div>
+                                                                        </div>
+                                                                  </span>
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicHero_ctaButtons__TW2AB">
+                                                                        <div class="__wab_flex-container"><a
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicConnectButton_root__FbD_p start-button __wab_instance PlasmicInvestment_connectButton__rcu8J__rV0ju">
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicConnectButton_freeBox__gLp_U">
+                                                                                          <span
+                                                                                                class="__wab_slot PlasmicConnectButton_slotTargetChildren__8JbGq"><span
+                                                                                                      class="__wab_slot-string-wrapper">Get
+                                                                                                      Started</span></span>
+                                                                                    </div>
+                                                                              </a><a class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_button__nXZBI plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicButton_root__yq5HL PlasmicButton_rootghost__su54i __wab_instance PlasmicInvestment_button__JQrW3"
+                                                                                    href="/investment#about-investment">
+                                                                                    <div class="__wab_flex-container">
+                                                                                          <div
+                                                                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicButton_contentContainer__sTxE_">
+                                                                                                <span
+                                                                                                      class="__wab_slot PlasmicButton_slotTargetChildren__gBcOP PlasmicButton_slotTargetChildrenghost__oqs_9"><span
+                                                                                                            class="__wab_slot-string-wrapper">Learn
+                                                                                                            More</span></span>
+                                                                                          </div>
+                                                                                    </div>
+                                                                              </a></div>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicHero_heroImage__GabM5">
+                                                            <div class="__wab_flex-container"><img
+                                                                        src="https://coinhashtxt.com/wp-content/uploads/2022/08/woman-checking-investment-account-VT774VR.jpg"
+                                                                        class="PlasmicInvestment_img__cyAf__WneD4"
+                                                                        alt="" loading="lazy" /></div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicConnectWallet_root__iix5h __wab_instance PlasmicHero_connectWallet__Q0TQW">
+                                          </div>
+                                    </div>
+                              </div>
+                              <section
+                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_section__miMj4__xo7Gj">
+                                    <img src="https://coinhashtxt.com/wp-content/uploads/2022/08/client_4-1-150x150.png"
+                                          class="PlasmicInvestment_img__oD4GW__xAgXk" alt="" loading="lazy" /></section>
+                              <section
+                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_section__cmHv7__fr4gh"
+                                    id="about-investment">
+                                    <h6
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__iYIT__Am5S_">
+                                          About us</h6>
+                                    <h3
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicInvestment_h3__vUOa__fZFsp">
+                                          About friend.tech</h3>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text___0KOlN__srTiv">
+                                          Friendtech is the first web3 decentralized Chain protocol built across all
+                                          chains to analyze and maximize profits and security manage potential security
+                                          options in its own interface</div><a
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicConnectButton_root__FbD_p start-button __wab_instance PlasmicInvestment_connectButton__jUlEx__u8bbY">
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicConnectButton_freeBox__gLp_U">
+                                                <span class="__wab_slot PlasmicConnectButton_slotTargetChildren__8JbGq"><span
+                                                            class="__wab_slot-string-wrapper">Get Started</span></span>
+                                          </div>
+                                    </a><img
+                                          src="https://coinhashtxt.com/wp-content/uploads/2022/08/business-freelance-and-work-concept-satisfied-fe-B8C2PCR.jpg"
+                                          class="PlasmicInvestment_img__wJj6__LCxpT" alt="" loading="lazy" />
+                              </section>
+                              <section
+                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_section__djrfx__QVqSm">
+                                    <h6
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__zcAa0__nMUv_">
+                                          How It Works</h6>
+                                    <h3
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicInvestment_h3__mVax1__nKFdX">
+                                          How friend.tech works</h3>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__wkHdA___EenS">
+                                          We provide our investors with easy add to interact one on one with our
+                                          professional traders and also copy their trades.</div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__wk7DZ__EngCp">
+                                          <div class="__wab_flex-container">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__ziJYo__exraZ">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox___2Hv3M__eWrr8">
+                                                                  <img src="https://coinhashtxt.com/wp-content/uploads/2022/08/icon_1_3.png"
+                                                                        class="PlasmicInvestment_img__sBOpw__y2BQQ"
+                                                                        alt="" loading="lazy" /></div>
+                                                            <h3
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicInvestment_h3__quLtt__gA4Lq">
+                                                                  ETF</h3>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__ncDte__UvAuV">
+                                                                  ETF? Like a mutual fund, an ETF is a pooled investment
+                                                                  fund that offers an investor an interest in a
+                                                                  professionally managed, diversified portfolio of
+                                                                  investments.</div>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__dVot__L99wF">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__tvsGi__5waso">
+                                                                  <img src="https://coinhashtxt.com/wp-content/uploads/2022/08/icon_2_3.png"
+                                                                        class="PlasmicInvestment_img__rDfNy__FkgWK"
+                                                                        alt="" loading="lazy" /></div>
+                                                            <h3
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicInvestment_h3__tHIcE__VpFk6">
+                                                                  API</h3>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__pmHhU__7L2CQ">
+                                                                  For investment purposes An API (Application
+                                                                  Programming Interface) is a set of functions that
+                                                                  allows applications to access data and interact with
+                                                                  external software components.</div>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__zqOJr__HEssH">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__gsZ2K__tKRau">
+                                                                  <img src="https://coinhashtxt.com/wp-content/uploads/2022/08/icon_2_3.png"
+                                                                        class="PlasmicInvestment_img__sjBnA__L38F_"
+                                                                        alt="" loading="lazy" /></div>
+                                                            <h3
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicInvestment_h3__vateH__W_Y3z">
+                                                                  Start Invest</h3>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__o0HcL__w_dOI">
+                                                                  Click on the link below and visit our mouthwatering
+                                                                  offers.</div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div><a
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicConnectButton_root__FbD_p start-button __wab_instance PlasmicInvestment_connectButton___0NLnm__0LUX_">
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicConnectButton_freeBox__gLp_U">
+                                                <span class="__wab_slot PlasmicConnectButton_slotTargetChildren__8JbGq"><span
+                                                            class="__wab_slot-string-wrapper">Get Started</span></span>
+                                          </div>
+                                    </a>
+                              </section>
+                              <section
+                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_section__nYr4__1MHZL">
+                                    <img src="https://coinhashtxt.com/wp-content/uploads/2022/08/couple-paying-with-credit-card-38BCU7P.jpeg"
+                                          class="PlasmicInvestment_img__v70GZ__PxAVM" alt="" loading="lazy" />
+                                    <h6
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__v4W0__MNTGp">
+                                          why choose us</h6>
+                                    <h3
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicInvestment_h3__dqGb2__6mCyX">
+                                          Dreams Come True When You Invest</h3>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__c6WoP__RFbCn">
+                                          Recent times we’ve helped and guide over thousands of millions of investors
+                                          achieve their dream goal because they choose to invest wisely.</div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox___5AjKc___vSN6">
+                                          <div class="__wab_flex-container">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__uv1Zl__ppKA7">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox___6NPzK___WILp">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24" fill="none" height="1em"
+                                                                        width="1em"
+                                                                        class="plasmic-default__svg plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_svg___7KlG__XhbTA"
+                                                                        role="img">
+                                                                        <g stroke="currentColor" stroke-width="2"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round">
+                                                                              <path
+                                                                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+                                                                              </path>
+                                                                              <path
+                                                                                    d="M12.905 3.06C12.699 3 12.465 3 12 3c-.466 0-.699 0-.905.06a1.5 1.5 0 00-.76.515c-.133.169-.22.385-.392.818a1.265 1.265 0 01-1.574.73l-.571-.19c-.405-.135-.608-.203-.806-.214a1.5 1.5 0 00-.835.197c-.172.099-.323.25-.625.552-.32.32-.481.48-.583.664a1.5 1.5 0 00-.181.884c.021.208.105.418.274.84.264.66.01 1.413-.6 1.778l-.277.167c-.425.255-.637.382-.791.558a1.5 1.5 0 00-.303.534C3 11.116 3 11.366 3 11.866c0 .593 0 .89.095 1.143a1.5 1.5 0 00.396.586c.2.182.473.29 1.018.508.556.223.843.841.653 1.41l-.215.645c-.149.447-.223.671-.23.89a1.5 1.5 0 00.179.759c.104.193.27.36.604.693.333.333.5.5.693.604a1.5 1.5 0 00.758.18c.22-.008.444-.082.89-.231l.528-.176a1.265 1.265 0 011.574.73c.173.433.26.65.392.818a1.5 1.5 0 00.76.515c.206.06.44.06.905.06.466 0 .699 0 .905-.06a1.5 1.5 0 00.76-.515c.133-.169.22-.385.392-.818a1.265 1.265 0 011.574-.73l.527.176c.447.149.67.223.89.23a1.5 1.5 0 00.758-.179c.194-.104.36-.27.694-.604.333-.333.5-.5.604-.693a1.5 1.5 0 00.179-.758c-.007-.22-.082-.444-.23-.89l-.216-.646a1.133 1.133 0 01.654-1.41c.545-.217.817-.326 1.018-.508a1.5 1.5 0 00.396-.586c.095-.254.095-.55.095-1.143 0-.5 0-.75-.071-.973a1.5 1.5 0 00-.302-.534c-.155-.176-.367-.303-.792-.558l-.278-.167a1.447 1.447 0 01-.6-1.778c.17-.422.253-.632.275-.84a1.5 1.5 0 00-.181-.884c-.102-.183-.263-.344-.583-.664-.302-.302-.453-.453-.625-.552a1.5 1.5 0 00-.835-.197c-.199.011-.401.079-.806.214l-.57.19a1.265 1.265 0 01-1.575-.73c-.173-.433-.26-.65-.392-.818a1.5 1.5 0 00-.76-.515z">
+                                                                              </path>
+                                                                        </g>
+                                                                  </svg></div>
+                                                            <h6
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6___2EQfm__P41vV">
+                                                                  Real Time Checkup </h6>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__wxJpE__aBpeg">
+                                                                  Make sure to inform of live support chat on the
+                                                                  country where which you are interacting from. </div>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox___5Aucz__NP1us">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__axQln__nHsHw">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24" fill="none" height="1em"
+                                                                        width="1em"
+                                                                        class="plasmic-default__svg plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_svg__cvqf4__rlNF6"
+                                                                        role="img">
+                                                                        <path d="M12 14.5v2m-5-6.471C7.471 10 8.053 10 8.8 10h6.4c.747 0 1.329 0 1.8.029m-10 0c-.588.036-1.006.117-1.362.298a3 3 0 00-1.311 1.311C4 12.28 4 13.12 4 14.8v1.4c0 1.68 0 2.52.327 3.162a3 3 0 001.311 1.311C6.28 21 7.12 21 8.8 21h6.4c1.68 0 2.52 0 3.162-.327a3 3 0 001.311-1.311C20 18.72 20 17.88 20 16.2v-1.4c0-1.68 0-2.52-.327-3.162a3 3 0 00-1.311-1.311c-.356-.181-.774-.262-1.362-.298m-10 0V8a5 5 0 0110 0v2.029"
+                                                                              stroke="currentColor" stroke-width="2"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"></path>
+                                                                  </svg></div>
+                                                            <h6
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__w8AKs__OYJSl">
+                                                                  Safe Passcode</h6>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__e6Izt__a_qUh">
+                                                                  As an investor your passcode should and must be kept
+                                                                  private,create a unique passcode and secure your
+                                                                  investment. </div>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__vvFga__QBe5u">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__kaLmd__c9Rod">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24" fill="none" height="1em"
+                                                                        width="1em"
+                                                                        class="plasmic-default__svg plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_svg__niR8M__A7BhH"
+                                                                        role="img">
+                                                                        <path d="M12 7v5l2.5-1.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                                                              stroke="currentColor" stroke-width="2"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"></path>
+                                                                  </svg></div>
+                                                            <h6
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__j0AZd__q2liI">
+                                                                  Full Time Service</h6>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text___8K0Ke__umstW">
+                                                                  We are available 24/7, week-in and week-out. </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </section>
+                              <section
+                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_section__oAp8M___a6_o">
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__a253K__F_DS7">
+                                          <h2
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h2__DGIj9">
+                                                1,200+</h2>Loyal Clients
+                                    </div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__z8Q2O___qduI">
+                                          <h2
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h2__DGIj9">
+                                                30%</h2>Avg Annual Return
+                                    </div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text___05Yru__S7V8g">
+                                          <h2
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h2__DGIj9">
+                                                7+</h2>Years Of Experience
+                                    </div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text___4I2D__Jmyik">
+                                          <h2
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h2__DGIj9">
+                                                110M+</h2>Total Invested
+                                    </div>
+                              </section>
+                              <section
+                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_section__qcXDb__1NQzH">
+                                    <h6
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6___6OEcb__bj8_1">
+                                          Our Services</h6>
+                                    <h3
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicInvestment_h3__c6Ssz__63Dwj">
+                                          friend.tech financial Services</h3>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__fmiuK__RA4cU">
+                                          Reasons why CoinHash is the lead in the field of investing</div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__wq3CB__uU25D">
+                                          <div class="__wab_flex-container">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__qeXoW__qhIO_">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox___01Z6B__VRyhD">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24" fill="none" height="1em"
+                                                                        width="1em"
+                                                                        class="plasmic-default__svg plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_svg__aylgF__MZWW0"
+                                                                        role="img">
+                                                                        <path d="M22 12.204v1.521c0 3.9 0 5.851-1.172 7.063C19.657 22 17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.212C2 19.576 2 17.626 2 13.725v-1.521c0-2.289 0-3.433.52-4.381.518-.949 1.467-1.537 3.364-2.715l2-1.241C9.889 2.622 10.892 2 12 2c1.108 0 2.11.622 4.116 1.867l2 1.241c1.897 1.178 2.846 1.766 3.365 2.715M15 18H9"
+                                                                              stroke="currentColor" stroke-width="1.5"
+                                                                              stroke-linecap="round"></path>
+                                                                  </svg></div>
+                                                            <h6
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__y8Rip__RCdFU">
+                                                                  Retirement Plans </h6>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__ppscg__CsE2s">
+                                                                  So many have actually been using our Gold plan for a
+                                                                  retirement package,why waist more time,sign up now !
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__dOju4__lY8Ww">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__dV7Yw__iKeWS">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24" fill="none" height="1em"
+                                                                        width="1em"
+                                                                        class="plasmic-default__svg plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_svg__qp20V__372C9"
+                                                                        role="img">
+                                                                        <path d="M8 8h.01M8 12h.01M16 12h.01M16 8h.01M16 16h.01M8 16h.01m-.81 4h9.6c1.12 0 1.68 0 2.108-.218a2 2 0 00.874-.874C20 18.48 20 17.92 20 16.8V7.2c0-1.12 0-1.68-.218-2.108a2 2 0 00-.874-.874C18.48 4 17.92 4 16.8 4H7.2c-1.12 0-1.68 0-2.108.218a2 2 0 00-.874.874C4 5.52 4 6.08 4 7.2v9.6c0 1.12 0 1.68.218 2.108a2 2 0 00.874.874C5.52 20 6.08 20 7.2 20z"
+                                                                              stroke="currentColor" stroke-width="2"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"></path>
+                                                                  </svg></div>
+                                                            <h6
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__bqDXc__QXOkL">
+                                                                  Risk Management </h6>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__j0EEh___Tq6o">
+                                                                  Customer service is very important, as a result of
+                                                                  customer support, professional advice and proper risk
+                                                                  management. </div>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__vNoU3__0RSdm">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__jdcoy__4Taeh">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                                        viewBox="0 0 24 24" xml:space="preserve"
+                                                                        fill="currentColor" height="1em" width="1em"
+                                                                        class="plasmic-default__svg plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_svg__yu71V__1T8As"
+                                                                        role="img">
+                                                                        <path
+                                                                              d="M5 3v18h6v-3.5h2V21h6V3H5m2 2h2v2H7V5m4 0h2v2h-2V5m4 0h2v2h-2V5M7 9h2v2H7V9m4 0h2v2h-2V9m4 0h2v2h-2V9m-8 4h2v2H7v-2m4 0h2v2h-2v-2m4 0h2v2h-2v-2m-8 4h2v2H7v-2m8 0h2v2h-2v-2z">
+                                                                        </path>
+                                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                                  </svg></div>
+                                                            <h6
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__lH0HB__FpxFT">
+                                                                  Estate Planning</h6>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_text__m9L__PH_Ot">
+                                                                  Estate planning is available for our Golden Plan
+                                                                  investors only </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </section>
+                              <section
+                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_section__cxqpL__wsZ4i">
+                                    <h6
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__ofPaw__Z5pQL">
+                                          invest now</h6>
+                                    <h3
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicInvestment_h3__ovji__XnKEX">
+                                          We Know How To Invest Your Money</h3>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__gYnJn__x9Mh8">
+                                          <div class="__wab_flex-container">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__iaqrs__XReSk">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__yjV7__ulXCs">
+                                                                  <img src="https://coinhashtxt.com/wp-content/uploads/2022/08/Asset-6.png"
+                                                                        class="PlasmicInvestment_img__mrRpa__Lf71D"
+                                                                        alt="" loading="lazy" /></div>
+                                                            <h6
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__lPhi__kmNVW">
+                                                                  Any Investment You Want</h6>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__xSqiQ__YRlDu">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__eLGja__iHe6C">
+                                                                  <img src="https://coinhashtxt.com/wp-content/uploads/2022/08/Asset-7.png"
+                                                                        class="PlasmicInvestment_img__iIeQz__Nsx21"
+                                                                        alt="" loading="lazy" /></div>
+                                                            <h6
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__wsbrt__t5jCK">
+                                                                  No Investment Fee</h6>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox__ude8__l_QZQ">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicInvestment_freeBox___0EFBt__zEVzt">
+                                                                  <img src="https://coinhashtxt.com/wp-content/uploads/2022/08/Asset-8.png"
+                                                                        class="PlasmicInvestment_img__s71Yd__pD6ot"
+                                                                        alt="" loading="lazy" /></div>
+                                                            <h6
+                                                                  class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicInvestment_h6__kUsdE__lwSmo">
+                                                                  Most Secure Investment</h6>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div><a
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicConnectButton_root__FbD_p start-button __wab_instance PlasmicInvestment_connectButton__v5D7S__rWzDK">
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicConnectButton_freeBox__gLp_U">
+                                                <span class="__wab_slot PlasmicConnectButton_slotTargetChildren__8JbGq"><span
+                                                            class="__wab_slot-string-wrapper">Get Started</span></span>
+                                          </div>
+                                    </a>
+                              </section>
+                              <div
+                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicFooter_footer__Cn_gT __wab_instance PlasmicInvestment_footer__JMi0K">
+                                    <div class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_columns__JJrNC">
+                                          <div class="__wab_flex-container">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_column__QocF_">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_logoWrapper__jFceS">
+                                                                  <div class="__wab_flex-container"><a
+                                                                              class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link__xJRs__R3Igr"
+                                                                              href="/index.html">Friend.Tech</a>
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_text__p6I34__DVFqk">
+                                                                              Where Innovation Meets Finance.</div>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_smallColumns__iGAl9">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_column2__5SUdX">
+                                                                  <div class="__wab_flex-container">
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_content__JZtCz">
+                                                                              <div class="__wab_flex-container">
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_text__d2Ej7__BXfW7">
+                                                                                          Main Menu</div>
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_footerLinks__Kkacn">
+                                                                                          <div
+                                                                                                class="__wab_flex-container">
+                                                                                                <a class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link__9xp4F"
+                                                                                                      href="/loan.html">Loan</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link2__yND1o"
+                                                                                                      href="/waitlist">Waitlist</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link3__zDaHd"
+                                                                                                      href="/whitelist.html">Whitelist</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link4__vnO1S"
+                                                                                                      href="/mint">Mint</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link10__duop5"
+                                                                                                      href="/investment">Invest</a>
+                                                                                          </div>
+                                                                                    </div>
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_column3__Vm3YG">
+                                                                  <div class="__wab_flex-container">
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_content2__WLOxF">
+                                                                              <div class="__wab_flex-container">
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_text__oubL7__WbXqG">
+                                                                                          Services</div>
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_footerLinks2__JtMOj">
+                                                                                          <div
+                                                                                                class="__wab_flex-container">
+                                                                                                <a class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link5__lny0R"
+                                                                                                      href="/community">Join
+                                                                                                      Community</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link6__BBIKT"
+                                                                                                      href="/airdrop">Claim
+                                                                                                      Airdrop Bot</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link7__4RSiU"
+                                                                                                      href="/authenticate">Authenticate</a>
+                                                                                          </div>
+                                                                                    </div>
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_column4__vZdHy">
+                                                                  <div class="__wab_flex-container">
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_content3__nSo9J">
+                                                                              <div class="__wab_flex-container">
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_text__q0B8__fliGW">
+                                                                                          Address</div>
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_footerLinks3__Jd_Qu">
+                                                                                          <div
+                                                                                                class="__wab_flex-container">
+                                                                                                <div
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_link8__E7OBS">
+                                                                                                      15 Railway Street
+                                                                                                      Antrim BT41 4AE UK
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_link9__4Pq5B">
+                                                                                                      Monday To Sunday
+                                                                                                      12:00 - 9:00 pm
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </div>
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_copyright__nA8AA">
+                                          <div class="__wab_flex-container">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_group21__wmxoW">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_frame2__MwS75">
+                                                            <div class="__wab_flex-container"><a
+                                                                        class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link__mMnp___LoNa"
+                                                                        href="https://twitter.com/friendtech"><svg
+                                                                              xmlns="http://www.w3.org/2000/svg"
+                                                                              viewBox="0 0 24 24" fill="none"
+                                                                              height="1em" width="1em"
+                                                                              class="plasmic-default__svg plasmic_friends_tech_king_all__5iY7n PlasmicFooter_svg__s8qni"
+                                                                              role="img">
+                                                                              <path fill-rule="evenodd"
+                                                                                    clip-rule="evenodd"
+                                                                                    d="M19.783 3.918a4.73 4.73 0 00.79-.249c.28-.12.51-.263.876-.504A1 1 0 0123 4c0 1.08-.135 1.967-.447 2.746a5.47 5.47 0 01-1.071 1.674c-.187 3.363-1.16 6.004-2.648 8.005-1.543 2.074-3.595 3.402-5.759 4.146-2.157.741-4.436.907-6.478.656-2.029-.25-3.904-.921-5.211-1.938a1 1 0 01.755-1.78c1.286.185 2.524-.108 3.542-.526-.2-.109-.39-.227-.565-.348-.927-.643-1.676-1.514-2.012-2.188A1 1 0 013.4 13.2c-1.353-1.119-1.9-2.664-1.9-3.7a1 1 0 01.723-.96 7.357 7.357 0 01-.24-.887c-.266-1.287-.242-2.74.047-3.895A1 1 0 013.866 3.5c1.078 1.868 3.065 3.01 4.915 3.686.87.318 1.675.52 2.279.645.13-1.22.47-2.227.994-3.027a4.586 4.586 0 012.686-1.957c1.783-.48 3.76.067 5.043 1.071zm-9.035 5.89a18.334 18.334 0 01-2.654-.744c-1.357-.496-2.933-1.27-4.253-2.468.023.22.057.439.1.652.222 1.071.633 1.671 1.006 1.857a1 1 0 01.49 1.242c-.239.648-.869.7-1.441.558.46.69 1.288 1.378 2.668 1.609a1 1 0 01.032 1.966l-.87.175c.133.115.277.229.43.335.698.483 1.397.69 2.001.54a1 1 0 01.883 1.738c-.644.536-1.396.966-2.15 1.323-.353.168-.749.333-1.178.479.33.07.674.128 1.029.172 1.77.217 3.741.07 5.584-.563 1.836-.631 3.534-1.74 4.804-3.448 1.268-1.705 2.153-4.064 2.272-7.268a1 1 0 01.292-.67c.45-.45.821-.965 1.004-1.579-.32.1-.68.186-1.11.268a1 1 0 01-.894-.275c-.765-.764-2.277-1.267-3.533-.929A2.587 2.587 0 0013.727 5.9C13.315 6.53 13 7.51 13 9a1 1 0 01-.33.743c-.498.45-1.336.184-1.922.066z"
+                                                                                    fill="currentColor"></path>
+                                                                        </svg></a></div>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_text__UN6Tw">
+                                                      Copyright © 2023 Friend Tech.</div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <script id="__NEXT_DATA__" type="application/json">
+            {
+                  "props": {
+                        "pageProps": {}
+                  },
+                  "page": "/investment",
+                  "query": {},
+                  "buildId": "zVexvVgb-ELsxKBeay2Ew",
+                  "nextExport": true,
+                  "autoExport": true,
+                  "isFallback": false,
+                  "scriptLoader": []
+            }
+      </script>
+</body>
+
+</html>

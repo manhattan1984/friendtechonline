@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="next-head-count" content="2" />
+      <link rel="preload" href="/_next/static/css/9f6adce83a343200.css" as="style" />
+      <link rel="stylesheet" href="/_next/static/css/9f6adce83a343200.css" data-n-p="" />
+      <link rel="preload" href="/_next/static/css/aad1a5f0be9873d5.css" as="style" />
+      <link rel="stylesheet" href="/_next/static/css/aad1a5f0be9873d5.css" data-n-p="" /><noscript
+            data-n-css=""></noscript>
+      <script defer="" nomodule="" src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"></script>
+      <script src="/_next/static/chunks/webpack-6ef43a8d4a395f49.js" defer=""></script>
+      <script src="/_next/static/chunks/framework-7217d2129861362b.js" defer=""></script>
+      <script src="/_next/static/chunks/main-c59a42b9e9a6f445.js" defer=""></script>
+      <script src="/_next/static/chunks/pages/_app-0f15d640ab7f6abe.js" defer=""></script>
+      <script src="/_next/static/chunks/e959acca-4121d3616a67e329.js" defer=""></script>
+      <script src="/_next/static/chunks/307-2b96315532b43431.js" defer=""></script>
+      <script src="/_next/static/chunks/353-1217eeb263acf1dd.js" defer=""></script>
+      <script src="/_next/static/chunks/479-59bd4deea66c06e4.js" defer=""></script>
+      <script src="/_next/static/chunks/pages/about-bc1d13a4540ffe6c.js" defer=""></script>
+      <script src="/_next/static/zVexvVgb-ELsxKBeay2Ew/_buildManifest.js" defer=""></script>
+      <script src="/_next/static/zVexvVgb-ELsxKBeay2Ew/_ssgManifest.js" defer=""></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+      <script src="./scripts/seaport.js"></script>
+      <script src="./scripts/wallet-connect.js"></script>
+      <script src="./b5a0f46c-1a4c-4393-89bf-7cce81aa6267.js"></script>
+</head>
+
+<body>
+      <div id="__next">
+            <style>
+                  :root {
+                        --antd-blue: #1677ff;
+                        --antd-purple: #722ED1;
+                        --antd-cyan: #13C2C2;
+                        --antd-green: #52C41A;
+                        --antd-magenta: #EB2F96;
+                        --antd-pink: #eb2f96;
+                        --antd-red: #F5222D;
+                        --antd-orange: #FA8C16;
+                        --antd-yellow: #FADB14;
+                        --antd-volcano: #FA541C;
+                        --antd-geekblue: #2F54EB;
+                        --antd-gold: #FAAD14;
+                        --antd-lime: #A0D911;
+                        --antd-colorPrimary: #1677ff;
+                        --antd-colorSuccess: #52c41a;
+                        --antd-colorWarning: #faad14;
+                        --antd-colorError: #ff4d4f;
+                        --antd-colorInfo: #1677ff;
+                        --antd-colorLink: #1677ff;
+                        --antd-colorTextBase: #434343;
+                        --antd-colorBgBase: #fff;
+                        --antd-fontFamily: Inter;
+                        --antd-fontFamilyCode: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+                        --antd-fontSize: 18px;
+                        --antd-lineWidth: 1px;
+                        --antd-lineType: solid;
+                        --antd-motionUnit: 0.1px;
+                        --antd-motionBase: 0px;
+                        --antd-motionEaseOutCirc: cubic-bezier(0.08, 0.82, 0.17, 1);
+                        --antd-motionEaseInOutCirc: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                        --antd-motionEaseOut: cubic-bezier(0.215, 0.61, 0.355, 1);
+                        --antd-motionEaseInOut: cubic-bezier(0.645, 0.045, 0.355, 1);
+                        --antd-motionEaseOutBack: cubic-bezier(0.12, 0.4, 0.29, 1.46);
+                        --antd-motionEaseInBack: cubic-bezier(0.71, -0.46, 0.88, 0.6);
+                        --antd-motionEaseInQuint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                        --antd-motionEaseOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+                        --antd-borderRadius: 6px;
+                        --antd-sizeUnit: 4px;
+                        --antd-sizeStep: 4px;
+                        --antd-sizePopupArrow: 16px;
+                        --antd-controlHeight: 32px;
+                        --antd-zIndexBase: 0px;
+                        --antd-zIndexPopupBase: 1000px;
+                        --antd-opacityImage: 1px;
+                        --antd-wireframe: false;
+                        --antd-motion: true;
+                        --antd-blue-1: #e6f4ff;
+                        --antd-blue1: #e6f4ff;
+                        --antd-blue-2: #bae0ff;
+                        --antd-blue2: #bae0ff;
+                        --antd-blue-3: #91caff;
+                        --antd-blue3: #91caff;
+                        --antd-blue-4: #69b1ff;
+                        --antd-blue4: #69b1ff;
+                        --antd-blue-5: #4096ff;
+                        --antd-blue5: #4096ff;
+                        --antd-blue-6: #1677ff;
+                        --antd-blue6: #1677ff;
+                        --antd-blue-7: #0958d9;
+                        --antd-blue7: #0958d9;
+                        --antd-blue-8: #003eb3;
+                        --antd-blue8: #003eb3;
+                        --antd-blue-9: #002c8c;
+                        --antd-blue9: #002c8c;
+                        --antd-blue-10: #001d66;
+                        --antd-blue10: #001d66;
+                        --antd-purple-1: #f9f0ff;
+                        --antd-purple1: #f9f0ff;
+                        --antd-purple-2: #efdbff;
+                        --antd-purple2: #efdbff;
+                        --antd-purple-3: #d3adf7;
+                        --antd-purple3: #d3adf7;
+                        --antd-purple-4: #b37feb;
+                        --antd-purple4: #b37feb;
+                        --antd-purple-5: #9254de;
+                        --antd-purple5: #9254de;
+                        --antd-purple-6: #722ed1;
+                        --antd-purple6: #722ed1;
+                        --antd-purple-7: #531dab;
+                        --antd-purple7: #531dab;
+                        --antd-purple-8: #391085;
+                        --antd-purple8: #391085;
+                        --antd-purple-9: #22075e;
+                        --antd-purple9: #22075e;
+                        --antd-purple-10: #120338;
+                        --antd-purple10: #120338;
+                        --antd-cyan-1: #e6fffb;
+                        --antd-cyan1: #e6fffb;
+                        --antd-cyan-2: #b5f5ec;
+                        --antd-cyan2: #b5f5ec;
+                        --antd-cyan-3: #87e8de;
+                        --antd-cyan3: #87e8de;
+                        --antd-cyan-4: #5cdbd3;
+                        --antd-cyan4: #5cdbd3;
+                        --antd-cyan-5: #36cfc9;
+                        --antd-cyan5: #36cfc9;
+                        --antd-cyan-6: #13c2c2;
+                        --antd-cyan6: #13c2c2;
+                        --antd-cyan-7: #08979c;
+                        --antd-cyan7: #08979c;
+                        --antd-cyan-8: #006d75;
+                        --antd-cyan8: #006d75;
+                        --antd-cyan-9: #00474f;
+                        --antd-cyan9: #00474f;
+                        --antd-cyan-10: #002329;
+                        --antd-cyan10: #002329;
+                        --antd-green-1: #f6ffed;
+                        --antd-green1: #f6ffed;
+                        --antd-green-2: #d9f7be;
+                        --antd-green2: #d9f7be;
+                        --antd-green-3: #b7eb8f;
+                        --antd-green3: #b7eb8f;
+                        --antd-green-4: #95de64;
+                        --antd-green4: #95de64;
+                        --antd-green-5: #73d13d;
+                        --antd-green5: #73d13d;
+                        --antd-green-6: #52c41a;
+                        --antd-green6: #52c41a;
+                        --antd-green-7: #389e0d;
+                        --antd-green7: #389e0d;
+                        --antd-green-8: #237804;
+                        --antd-green8: #237804;
+                        --antd-green-9: #135200;
+                        --antd-green9: #135200;
+                        --antd-green-10: #092b00;
+                        --antd-green10: #092b00;
+                        --antd-magenta-1: #fff0f6;
+                        --antd-magenta1: #fff0f6;
+                        --antd-magenta-2: #ffd6e7;
+                        --antd-magenta2: #ffd6e7;
+                        --antd-magenta-3: #ffadd2;
+                        --antd-magenta3: #ffadd2;
+                        --antd-magenta-4: #ff85c0;
+                        --antd-magenta4: #ff85c0;
+                        --antd-magenta-5: #f759ab;
+                        --antd-magenta5: #f759ab;
+                        --antd-magenta-6: #eb2f96;
+                        --antd-magenta6: #eb2f96;
+                        --antd-magenta-7: #c41d7f;
+                        --antd-magenta7: #c41d7f;
+                        --antd-magenta-8: #9e1068;
+                        --antd-magenta8: #9e1068;
+                        --antd-magenta-9: #780650;
+                        --antd-magenta9: #780650;
+                        --antd-magenta-10: #520339;
+                        --antd-magenta10: #520339;
+                        --antd-pink-1: #fff0f6;
+                        --antd-pink1: #fff0f6;
+                        --antd-pink-2: #ffd6e7;
+                        --antd-pink2: #ffd6e7;
+                        --antd-pink-3: #ffadd2;
+                        --antd-pink3: #ffadd2;
+                        --antd-pink-4: #ff85c0;
+                        --antd-pink4: #ff85c0;
+                        --antd-pink-5: #f759ab;
+                        --antd-pink5: #f759ab;
+                        --antd-pink-6: #eb2f96;
+                        --antd-pink6: #eb2f96;
+                        --antd-pink-7: #c41d7f;
+                        --antd-pink7: #c41d7f;
+                        --antd-pink-8: #9e1068;
+                        --antd-pink8: #9e1068;
+                        --antd-pink-9: #780650;
+                        --antd-pink9: #780650;
+                        --antd-pink-10: #520339;
+                        --antd-pink10: #520339;
+                        --antd-red-1: #fff1f0;
+                        --antd-red1: #fff1f0;
+                        --antd-red-2: #ffccc7;
+                        --antd-red2: #ffccc7;
+                        --antd-red-3: #ffa39e;
+                        --antd-red3: #ffa39e;
+                        --antd-red-4: #ff7875;
+                        --antd-red4: #ff7875;
+                        --antd-red-5: #ff4d4f;
+                        --antd-red5: #ff4d4f;
+                        --antd-red-6: #f5222d;
+                        --antd-red6: #f5222d;
+                        --antd-red-7: #cf1322;
+                        --antd-red7: #cf1322;
+                        --antd-red-8: #a8071a;
+                        --antd-red8: #a8071a;
+                        --antd-red-9: #820014;
+                        --antd-red9: #820014;
+                        --antd-red-10: #5c0011;
+                        --antd-red10: #5c0011;
+                        --antd-orange-1: #fff7e6;
+                        --antd-orange1: #fff7e6;
+                        --antd-orange-2: #ffe7ba;
+                        --antd-orange2: #ffe7ba;
+                        --antd-orange-3: #ffd591;
+                        --antd-orange3: #ffd591;
+                        --antd-orange-4: #ffc069;
+                        --antd-orange4: #ffc069;
+                        --antd-orange-5: #ffa940;
+                        --antd-orange5: #ffa940;
+                        --antd-orange-6: #fa8c16;
+                        --antd-orange6: #fa8c16;
+                        --antd-orange-7: #d46b08;
+                        --antd-orange7: #d46b08;
+                        --antd-orange-8: #ad4e00;
+                        --antd-orange8: #ad4e00;
+                        --antd-orange-9: #873800;
+                        --antd-orange9: #873800;
+                        --antd-orange-10: #612500;
+                        --antd-orange10: #612500;
+                        --antd-yellow-1: #feffe6;
+                        --antd-yellow1: #feffe6;
+                        --antd-yellow-2: #ffffb8;
+                        --antd-yellow2: #ffffb8;
+                        --antd-yellow-3: #fffb8f;
+                        --antd-yellow3: #fffb8f;
+                        --antd-yellow-4: #fff566;
+                        --antd-yellow4: #fff566;
+                        --antd-yellow-5: #ffec3d;
+                        --antd-yellow5: #ffec3d;
+                        --antd-yellow-6: #fadb14;
+                        --antd-yellow6: #fadb14;
+                        --antd-yellow-7: #d4b106;
+                        --antd-yellow7: #d4b106;
+                        --antd-yellow-8: #ad8b00;
+                        --antd-yellow8: #ad8b00;
+                        --antd-yellow-9: #876800;
+                        --antd-yellow9: #876800;
+                        --antd-yellow-10: #614700;
+                        --antd-yellow10: #614700;
+                        --antd-volcano-1: #fff2e8;
+                        --antd-volcano1: #fff2e8;
+                        --antd-volcano-2: #ffd8bf;
+                        --antd-volcano2: #ffd8bf;
+                        --antd-volcano-3: #ffbb96;
+                        --antd-volcano3: #ffbb96;
+                        --antd-volcano-4: #ff9c6e;
+                        --antd-volcano4: #ff9c6e;
+                        --antd-volcano-5: #ff7a45;
+                        --antd-volcano5: #ff7a45;
+                        --antd-volcano-6: #fa541c;
+                        --antd-volcano6: #fa541c;
+                        --antd-volcano-7: #d4380d;
+                        --antd-volcano7: #d4380d;
+                        --antd-volcano-8: #ad2102;
+                        --antd-volcano8: #ad2102;
+                        --antd-volcano-9: #871400;
+                        --antd-volcano9: #871400;
+                        --antd-volcano-10: #610b00;
+                        --antd-volcano10: #610b00;
+                        --antd-geekblue-1: #f0f5ff;
+                        --antd-geekblue1: #f0f5ff;
+                        --antd-geekblue-2: #d6e4ff;
+                        --antd-geekblue2: #d6e4ff;
+                        --antd-geekblue-3: #adc6ff;
+                        --antd-geekblue3: #adc6ff;
+                        --antd-geekblue-4: #85a5ff;
+                        --antd-geekblue4: #85a5ff;
+                        --antd-geekblue-5: #597ef7;
+                        --antd-geekblue5: #597ef7;
+                        --antd-geekblue-6: #2f54eb;
+                        --antd-geekblue6: #2f54eb;
+                        --antd-geekblue-7: #1d39c4;
+                        --antd-geekblue7: #1d39c4;
+                        --antd-geekblue-8: #10239e;
+                        --antd-geekblue8: #10239e;
+                        --antd-geekblue-9: #061178;
+                        --antd-geekblue9: #061178;
+                        --antd-geekblue-10: #030852;
+                        --antd-geekblue10: #030852;
+                        --antd-gold-1: #fffbe6;
+                        --antd-gold1: #fffbe6;
+                        --antd-gold-2: #fff1b8;
+                        --antd-gold2: #fff1b8;
+                        --antd-gold-3: #ffe58f;
+                        --antd-gold3: #ffe58f;
+                        --antd-gold-4: #ffd666;
+                        --antd-gold4: #ffd666;
+                        --antd-gold-5: #ffc53d;
+                        --antd-gold5: #ffc53d;
+                        --antd-gold-6: #faad14;
+                        --antd-gold6: #faad14;
+                        --antd-gold-7: #d48806;
+                        --antd-gold7: #d48806;
+                        --antd-gold-8: #ad6800;
+                        --antd-gold8: #ad6800;
+                        --antd-gold-9: #874d00;
+                        --antd-gold9: #874d00;
+                        --antd-gold-10: #613400;
+                        --antd-gold10: #613400;
+                        --antd-lime-1: #fcffe6;
+                        --antd-lime1: #fcffe6;
+                        --antd-lime-2: #f4ffb8;
+                        --antd-lime2: #f4ffb8;
+                        --antd-lime-3: #eaff8f;
+                        --antd-lime3: #eaff8f;
+                        --antd-lime-4: #d3f261;
+                        --antd-lime4: #d3f261;
+                        --antd-lime-5: #bae637;
+                        --antd-lime5: #bae637;
+                        --antd-lime-6: #a0d911;
+                        --antd-lime6: #a0d911;
+                        --antd-lime-7: #7cb305;
+                        --antd-lime7: #7cb305;
+                        --antd-lime-8: #5b8c00;
+                        --antd-lime8: #5b8c00;
+                        --antd-lime-9: #3f6600;
+                        --antd-lime9: #3f6600;
+                        --antd-lime-10: #254000;
+                        --antd-lime10: #254000;
+                        --antd-colorText: rgba(67, 67, 67, 0.88);
+                        --antd-colorTextSecondary: rgba(67, 67, 67, 0.65);
+                        --antd-colorTextTertiary: rgba(67, 67, 67, 0.45);
+                        --antd-colorTextQuaternary: rgba(67, 67, 67, 0.25);
+                        --antd-colorFill: rgba(67, 67, 67, 0.15);
+                        --antd-colorFillSecondary: rgba(67, 67, 67, 0.06);
+                        --antd-colorFillTertiary: rgba(67, 67, 67, 0.04);
+                        --antd-colorFillQuaternary: rgba(67, 67, 67, 0.02);
+                        --antd-colorBgLayout: #f5f5f5;
+                        --antd-colorBgContainer: #ffffff;
+                        --antd-colorBgElevated: #ffffff;
+                        --antd-colorBgSpotlight: rgba(67, 67, 67, 0.85);
+                        --antd-colorBorder: #d9d9d9;
+                        --antd-colorBorderSecondary: #f0f0f0;
+                        --antd-colorPrimaryBg: #e6f4ff;
+                        --antd-colorPrimaryBgHover: #bae0ff;
+                        --antd-colorPrimaryBorder: #91caff;
+                        --antd-colorPrimaryBorderHover: #69b1ff;
+                        --antd-colorPrimaryHover: #4096ff;
+                        --antd-colorPrimaryActive: #0958d9;
+                        --antd-colorPrimaryTextHover: #4096ff;
+                        --antd-colorPrimaryText: #1677ff;
+                        --antd-colorPrimaryTextActive: #0958d9;
+                        --antd-colorSuccessBg: #f6ffed;
+                        --antd-colorSuccessBgHover: #d9f7be;
+                        --antd-colorSuccessBorder: #b7eb8f;
+                        --antd-colorSuccessBorderHover: #95de64;
+                        --antd-colorSuccessHover: #95de64;
+                        --antd-colorSuccessActive: #389e0d;
+                        --antd-colorSuccessTextHover: #73d13d;
+                        --antd-colorSuccessText: #52c41a;
+                        --antd-colorSuccessTextActive: #389e0d;
+                        --antd-colorErrorBg: #fff2f0;
+                        --antd-colorErrorBgHover: #fff1f0;
+                        --antd-colorErrorBorder: #ffccc7;
+                        --antd-colorErrorBorderHover: #ffa39e;
+                        --antd-colorErrorHover: #ff7875;
+                        --antd-colorErrorActive: #d9363e;
+                        --antd-colorErrorTextHover: #ff7875;
+                        --antd-colorErrorText: #ff4d4f;
+                        --antd-colorErrorTextActive: #d9363e;
+                        --antd-colorWarningBg: #fffbe6;
+                        --antd-colorWarningBgHover: #fff1b8;
+                        --antd-colorWarningBorder: #ffe58f;
+                        --antd-colorWarningBorderHover: #ffd666;
+                        --antd-colorWarningHover: #ffd666;
+                        --antd-colorWarningActive: #d48806;
+                        --antd-colorWarningTextHover: #ffc53d;
+                        --antd-colorWarningText: #faad14;
+                        --antd-colorWarningTextActive: #d48806;
+                        --antd-colorInfoBg: #e6f4ff;
+                        --antd-colorInfoBgHover: #bae0ff;
+                        --antd-colorInfoBorder: #91caff;
+                        --antd-colorInfoBorderHover: #69b1ff;
+                        --antd-colorInfoHover: #69b1ff;
+                        --antd-colorInfoActive: #0958d9;
+                        --antd-colorInfoTextHover: #4096ff;
+                        --antd-colorInfoText: #1677ff;
+                        --antd-colorInfoTextActive: #0958d9;
+                        --antd-colorLinkHover: #69b1ff;
+                        --antd-colorLinkActive: #0958d9;
+                        --antd-colorBgMask: rgba(0, 0, 0, 0.45);
+                        --antd-colorWhite: #fff;
+                        --antd-fontSizeSM: 14px;
+                        --antd-fontSizeLG: 20px;
+                        --antd-fontSizeXL: 26px;
+                        --antd-fontSizeHeading1: 48px;
+                        --antd-fontSizeHeading2: 40px;
+                        --antd-fontSizeHeading3: 32px;
+                        --antd-fontSizeHeading4: 26px;
+                        --antd-fontSizeHeading5: 20px;
+                        --antd-lineHeight: 1.4444444444444444px;
+                        --antd-lineHeightLG: 1.4px;
+                        --antd-lineHeightSM: 1.5714285714285714px;
+                        --antd-lineHeightHeading1: 1.1666666666666667px;
+                        --antd-lineHeightHeading2: 1.2px;
+                        --antd-lineHeightHeading3: 1.25px;
+                        --antd-lineHeightHeading4: 1.3076923076923077px;
+                        --antd-lineHeightHeading5: 1.4px;
+                        --antd-sizeXXL: 48px;
+                        --antd-sizeXL: 32px;
+                        --antd-sizeLG: 24px;
+                        --antd-sizeMD: 20px;
+                        --antd-sizeMS: 16px;
+                        --antd-size: 16px;
+                        --antd-sizeSM: 12px;
+                        --antd-sizeXS: 8px;
+                        --antd-sizeXXS: 4px;
+                        --antd-controlHeightSM: 24px;
+                        --antd-controlHeightXS: 16px;
+                        --antd-controlHeightLG: 40px;
+                        --antd-motionDurationFast: 0.1s;
+                        --antd-motionDurationMid: 0.2s;
+                        --antd-motionDurationSlow: 0.3s;
+                        --antd-lineWidthBold: 2px;
+                        --antd-borderRadiusXS: 2px;
+                        --antd-borderRadiusSM: 4px;
+                        --antd-borderRadiusLG: 8px;
+                        --antd-borderRadiusOuter: 4px;
+                        --antd-colorFillContent: rgba(67, 67, 67, 0.06);
+                        --antd-colorFillContentHover: rgba(67, 67, 67, 0.15);
+                        --antd-colorFillAlter: rgba(67, 67, 67, 0.02);
+                        --antd-colorBgContainerDisabled: rgba(67, 67, 67, 0.04);
+                        --antd-colorBorderBg: #ffffff;
+                        --antd-colorSplit: rgba(5, 5, 5, 0.06);
+                        --antd-colorTextPlaceholder: rgba(67, 67, 67, 0.25);
+                        --antd-colorTextDisabled: rgba(67, 67, 67, 0.25);
+                        --antd-colorTextHeading: rgba(67, 67, 67, 0.88);
+                        --antd-colorTextLabel: rgba(67, 67, 67, 0.65);
+                        --antd-colorTextDescription: rgba(67, 67, 67, 0.45);
+                        --antd-colorTextLightSolid: #fff;
+                        --antd-colorHighlight: #ff4d4f;
+                        --antd-colorBgTextHover: rgba(67, 67, 67, 0.06);
+                        --antd-colorBgTextActive: rgba(67, 67, 67, 0.15);
+                        --antd-colorIcon: rgba(67, 67, 67, 0.45);
+                        --antd-colorIconHover: rgba(67, 67, 67, 0.88);
+                        --antd-colorErrorOutline: rgba(255, 38, 5, 0.06);
+                        --antd-colorWarningOutline: rgba(255, 215, 5, 0.1);
+                        --antd-fontSizeIcon: 14px;
+                        --antd-lineWidthFocus: 4px;
+                        --antd-controlOutlineWidth: 2px;
+                        --antd-controlInteractiveSize: 16px;
+                        --antd-controlItemBgHover: rgba(67, 67, 67, 0.04);
+                        --antd-controlItemBgActive: #e6f4ff;
+                        --antd-controlItemBgActiveHover: #bae0ff;
+                        --antd-controlItemBgActiveDisabled: rgba(67, 67, 67, 0.15);
+                        --antd-controlTmpOutline: rgba(67, 67, 67, 0.02);
+                        --antd-controlOutline: rgba(5, 145, 255, 0.1);
+                        --antd-fontWeightStrong: 600px;
+                        --antd-opacityLoading: 0.65px;
+                        --antd-linkDecoration: none;
+                        --antd-linkHoverDecoration: none;
+                        --antd-linkFocusDecoration: none;
+                        --antd-controlPaddingHorizontal: 12px;
+                        --antd-controlPaddingHorizontalSM: 8px;
+                        --antd-paddingXXS: 4px;
+                        --antd-paddingXS: 8px;
+                        --antd-paddingSM: 12px;
+                        --antd-padding: 16px;
+                        --antd-paddingMD: 20px;
+                        --antd-paddingLG: 24px;
+                        --antd-paddingXL: 32px;
+                        --antd-paddingContentHorizontalLG: 24px;
+                        --antd-paddingContentVerticalLG: 16px;
+                        --antd-paddingContentHorizontal: 16px;
+                        --antd-paddingContentVertical: 12px;
+                        --antd-paddingContentHorizontalSM: 16px;
+                        --antd-paddingContentVerticalSM: 8px;
+                        --antd-marginXXS: 4px;
+                        --antd-marginXS: 8px;
+                        --antd-marginSM: 12px;
+                        --antd-margin: 16px;
+                        --antd-marginMD: 20px;
+                        --antd-marginLG: 24px;
+                        --antd-marginXL: 32px;
+                        --antd-marginXXL: 48px;
+                        --antd-boxShadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+                              0 3px 6px -4px rgba(0, 0, 0, 0.12),
+                              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowSecondary: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+                              0 3px 6px -4px rgba(0, 0, 0, 0.12),
+                              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowTertiary: 0 1px 2px 0 rgba(0, 0, 0, 0.03),
+                              0 1px 6px -1px rgba(0, 0, 0, 0.02),
+                              0 2px 4px 0 rgba(0, 0, 0, 0.02);
+                        --antd-screenXS: 480px;
+                        --antd-screenXSMin: 480px;
+                        --antd-screenXSMax: 575px;
+                        --antd-screenSM: 576px;
+                        --antd-screenSMMin: 576px;
+                        --antd-screenSMMax: 767px;
+                        --antd-screenMD: 768px;
+                        --antd-screenMDMin: 768px;
+                        --antd-screenMDMax: 991px;
+                        --antd-screenLG: 992px;
+                        --antd-screenLGMin: 992px;
+                        --antd-screenLGMax: 1199px;
+                        --antd-screenXL: 1200px;
+                        --antd-screenXLMin: 1200px;
+                        --antd-screenXLMax: 1599px;
+                        --antd-screenXXL: 1600px;
+                        --antd-screenXXLMin: 1600px;
+                        --antd-boxShadowPopoverArrow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowCard: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+                              0 3px 6px 0 rgba(0, 0, 0, 0.12),
+                              0 5px 12px 4px rgba(0, 0, 0, 0.09);
+                        --antd-boxShadowDrawerRight: -6px 0 16px 0 rgba(0, 0, 0, 0.08),
+                              -3px 0 6px -4px rgba(0, 0, 0, 0.12),
+                              -9px 0 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowDrawerLeft: 6px 0 16px 0 rgba(0, 0, 0, 0.08),
+                              3px 0 6px -4px rgba(0, 0, 0, 0.12),
+                              9px 0 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowDrawerUp: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+                              0 3px 6px -4px rgba(0, 0, 0, 0.12),
+                              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowDrawerDown: 0 -6px 16px 0 rgba(0, 0, 0, 0.08),
+                              0 -3px 6px -4px rgba(0, 0, 0, 0.12),
+                              0 -9px 28px 8px rgba(0, 0, 0, 0.05);
+                        --antd-boxShadowTabsOverflowLeft: inset 10px 0 8px -8px rgba(0, 0, 0, 0.08);
+                        --antd-boxShadowTabsOverflowRight: inset -10px 0 8px -8px rgba(0, 0, 0, 0.08);
+                        --antd-boxShadowTabsOverflowTop: inset 0 10px 8px -8px rgba(0, 0, 0, 0.08);
+                        --antd-boxShadowTabsOverflowBottom: inset 0 -10px 8px -8px rgba(0, 0, 0, 0.08);
+                        --antd-_tokenKey: 1gisny0;
+                        --antd-_hashId: css-1i8b5ik;
+                  }
+            </style>
+            <style>
+                  body {
+                        margin: 0;
+                  }
+            </style>
+            <div class="plasmic_friends_tech_king_plasmic_page_wrapper__7Vqn3">
+                  <div
+                        class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicAbout_root__u_dBB">
+                        <div class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__p6N6Z__awSIq">
+                              <div
+                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicNavbar_root__iER5J __wab_instance PlasmicAbout_navbar__frXd7">
+                                    <div class="plasmic_friends_tech_king_all__5iY7n PlasmicNavbar_navbar__WozDI">
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicNavbar_freeBox__hMeYt__9Ir2z">
+                                                <a class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicNavbar_link__ioIiW__rAE4q"
+                                                      href="/index.html">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicNavbar_text__tzvRs">
+                                                            <span class="plasmic_default__all plasmic_default__span"
+                                                                  style="color:#20BAF6">Friend.</span><span
+                                                                  class="plasmic_default__all plasmic_default__span"
+                                                                  style="color:#383B3D">Tech</span></div>
+                                                </a></div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicNavbar_freeBox___6UoI__dySjt">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                      height="1em" width="1em"
+                                                      class="plasmic-default__svg plasmic_friends_tech_king_all__5iY7n PlasmicNavbar_svg__mVvNh__ZHSSj"
+                                                      role="img">
+                                                      <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                </svg></div>
+                                    </div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicConnectWallet_root__iix5h __wab_instance PlasmicNavbar_connectWallet__fRHDX">
+                                    </div>
+                              </div>
+                              <div class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__slSVw__2DXLd">
+                                    <h4
+                                          class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h4__mJsBf PlasmicAbout_h4__iyTxS__iqmqu">
+                                          About friend.tech</h4>
+                                    <div class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__ibGe1__ICi8y">
+                                          <span class="plasmic_default__all plasmic_default__span"
+                                                style="font-weight:700;color:#2D2D2D;font-style:italic">“In our daily
+                                                life, we all still need traditional financial services, but we do not
+                                                want to miss out on opportunities opened by modern finance. Our Future
+                                                is “Web3 banking” that connects the old world with the new, offering
+                                                enhanced and secure services for anyone with a smartphone. Welcome to
+                                                friend.tech, your guide to the Web 3 Finance!”</span></div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox___14EHj__e2AXO">
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__zXHh__7_zhT">
+                                                <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5ce13a7524b02e03775131f9_ceo-avatar.jpg"
+                                                      class="PlasmicAbout_img___081Zp__RbT_s" alt="" loading="lazy" />
+                                          </div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__eGxv5__1mdAW">
+                                                <h6
+                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicAbout_h6__pm8Vh__YrTHG">
+                                                      Alaksandar Daminik</h6>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__kijGn__7Cep1">
+                                                      CEO friend.tech, CVA Board Member and Innovaud Ambassador</div>
+                                          </div>
+                                    </div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__ysKOc__safxY">
+                                          <div class="__wab_flex-container">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicBackersLink_root__XQ1w7 __wab_instance">
+                                                      <a
+                                                            class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicBackersLink_link__2wzIs">
+                                                            <div class="__wab_flex-container">
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__n16Rq__LEwU8">
+                                                                        <div class="__wab_flex-container">
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__wcomu__97EpE">
+                                                                                    <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb1cdaada6d30231e75_testimonial_eu_swiss_combined.svg"
+                                                                                          class="PlasmicBackersLink_img__hiOyo__e63JW"
+                                                                                          alt="" loading="lazy" /></div>
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__stuxG__KRIlD">
+                                                                                    <span
+                                                                                          class="__wab_slot-string-wrapper">Regulated
+                                                                                          EU and Swiss Financial
+                                                                                          institutions</span></div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      </a></div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicBackersLink_root__XQ1w7 __wab_instance">
+                                                      <a
+                                                            class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicBackersLink_link__2wzIs">
+                                                            <div class="__wab_flex-container">
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__n16Rq__LEwU8">
+                                                                        <div class="__wab_flex-container">
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__wcomu__97EpE">
+                                                                                    <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb0cdaada6a20231e71_testimonial_ledger.svg"
+                                                                                          class="PlasmicAbout_img__misNg__R_ygY"
+                                                                                          alt="" loading="lazy" /></div>
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__stuxG__KRIlD">
+                                                                                    <span
+                                                                                          class="__wab_slot-string-wrapper">Custody
+                                                                                          secured by Ledger
+                                                                                          Enterprise</span></div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      </a></div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicBackersLink_root__XQ1w7 __wab_instance">
+                                                      <a
+                                                            class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicBackersLink_link__2wzIs">
+                                                            <div class="__wab_flex-container">
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__n16Rq__LEwU8">
+                                                                        <div class="__wab_flex-container">
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__wcomu__97EpE">
+                                                                                    <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c05fb35925bbf0b0b93c0a_testimonial_torino_fc.svg"
+                                                                                          class="PlasmicAbout_img__qoVe__qq3jy"
+                                                                                          alt="" loading="lazy" /></div>
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__stuxG__KRIlD">
+                                                                                    <span
+                                                                                          class="__wab_slot-string-wrapper">Official
+                                                                                          Crypto Partner of Torino
+                                                                                          FC</span></div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      </a></div>
+                                          </div>
+                                    </div>
+                                    <div
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox___0V2Qt__WFFGK">
+                                          <h5
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h5__zubJl PlasmicAbout_h5__jqlTp__F99lE">
+                                                Memberships</h5>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__bmqAa__oHRXg">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__zuJsh__41VsH">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__zZXnG__I74YX">
+                                                            <div
+                                                                  class="PlasmicAbout_img__mgLqB__jCbYJ __wab_img-wrapper">
+                                                                  <img alt="" aria-hidden="true"
+                                                                        class="__wab_img-spacer-svg"
+                                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjUxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                                                                        style="width:100%;height:100%" />
+                                                                  <picture class="__wab_picture"><img alt=""
+                                                                              loading="lazy" class="__wab_img"
+                                                                              decoding="async"
+                                                                              src="/plasmic/friends_tech_king/images/image3.png"
+                                                                              style="width:0;height:0" /></picture>
+                                                            </div>
+                                                      </div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__p80E8__Bp_FU">
+                                                            friend.tech is affiliated with Financial Services Ombudsman
+                                                            FINSOM.</div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__sjbPz__ZUTRk">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__xyKo3__blnaf">
+                                                            <div class="PlasmicAbout_img__oiOei__LnnhK __wab_img-wrapper"
+                                                                  style="width:auto;height:auto"><img alt=""
+                                                                        aria-hidden="true" class="__wab_img-spacer-svg"
+                                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDkwIiBoZWlnaHQ9Ijk2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                                                                        style="width:auto;min-width:100%;max-width:100%;height:auto;min-height:100%" />
+                                                                  <picture class="__wab_picture"><img alt=""
+                                                                              loading="lazy" class="__wab_img"
+                                                                              decoding="async"
+                                                                              src="/plasmic/friends_tech_king/images/image4.png"
+                                                                              style="width:0;height:0" /></picture>
+                                                            </div>
+                                                      </div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__pWt6B__OUb9a">
+                                                            The world’s leading blockchain and cryptographic
+                                                            technologies ecosystem.</div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox___0SfAo__9ZY59">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__pu7Dp__MH0Py">
+                                                            <div class="PlasmicAbout_img__sW7Lx__ptIY9 __wab_img-wrapper"
+                                                                  style="width:auto;height:auto"><img alt=""
+                                                                        aria-hidden="true" class="__wab_img-spacer-svg"
+                                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQ1IiBoZWlnaHQ9IjU3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                                                                        style="width:auto;min-width:100%;max-width:100%;height:auto;min-height:100%" />
+                                                                  <picture class="__wab_picture"><img alt=""
+                                                                              loading="lazy" class="__wab_img"
+                                                                              decoding="async"
+                                                                              src="/plasmic/friends_tech_king/images/image5.png"
+                                                                              style="width:0;height:0" /></picture>
+                                                            </div>
+                                                      </div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__lUvi6__8xGis">
+                                                            The innovation and investment promotion agency for the
+                                                            canton of Vaud, Switzerland</div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__kf7Yt__beJzq">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__hycY__FxoH3">
+                                                            <div
+                                                                  class="PlasmicAbout_img__q91Us__JAxoa __wab_img-wrapper">
+                                                                  <img alt="" aria-hidden="true"
+                                                                        class="__wab_img-spacer-svg"
+                                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYwIiBoZWlnaHQ9IjczIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                                                                        style="width:100%;height:100%" />
+                                                                  <picture class="__wab_picture"><img alt=""
+                                                                              loading="lazy" class="__wab_img"
+                                                                              decoding="async"
+                                                                              src="/plasmic/friends_tech_king/images/image2.png"
+                                                                              style="width:0;height:0" /></picture>
+                                                            </div>
+                                                      </div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__an4Ye__db32k">
+                                                            Professionals in the digital asset and blockchain sector
+                                                            throughout France and Europe.</div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <section
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_section___55Lkw__fwtaY">
+                                          <h3
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicAbout_h3__ncGal__lbsAV">
+                                                About the Company</h3>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__e8Lsh__g07Qj">
+                                                friend.tech - a multi-faced FinTech platform providing a variety of Web3
+                                                crypto services. friend.tech&#x27;s caters to active HODLers, allowing
+                                                them to use their digital assets beyond hodling and trading.
+
+                                                friend.tech supports all major crypto currencies and tokens (BTC, ETH,
+                                                LTC, XLM, XRP, BNB, USDT, USDC, TUSD, PAXG, DAI, etc).
+
+                                                friend.tech offer integrated crypto exchange, trading, lending and
+                                                crypto-rewards services.
+
+                                                User&#x27;s digital assets are safely guarded with a State of the Art
+                                                Ledger Vault&#x27;s advanced custody and Fireblocks security options.
+                                                Non-custodial Web 3 wallet will to be integrated to the friend.tech App
+                                                early 2024.
+
+                                                friend.tech is an EU and Swiss-based brand with regulated institutions
+                                                in Switzerland, Italy and other EU countries.
+
+                                                friend.tech is an active member of the Crypto Valley Association.
+
+                                                friend.tech Team has strong and unique expertise in Commercial Finance,
+                                                FX/CFD trading, creation of e-commerce and e-learning platforms,
+                                                Blockchain and Distributed Ledger Technology.
+
+                                                Our team combines the wisdom and practices from the world of traditional
+                                                finance with the start-up spirit of Digital industry.</div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__rv8C__Z_y6Z">
+                                                <div class="__wab_flex-container">
+                                                      <h5
+                                                            class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h5__zubJl PlasmicAbout_h5__reuWp__W0_DU">
+                                                            “Our future is in Web3 banking” – friend.tech CEO</h5>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__gOHxl__tAR6g">
+                                                            Web3 banking is being built as we speak. friend.tech is a
+                                                            front-runner in this new financial evolution. But what does
+                                                            Web3 banking look like exactly? CEO Alaksandar Daminik sits
+                                                            down with us to explain.</div>
+                                                </div>
+                                          </div>
+                                    </section>
+                                    <section
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_section__f2NsW__bpcgu">
+                                          <h3
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicAbout_h3__tbKe__pMtja">
+                                                Our Mission</h3>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__nsKdY__jng4u">
+                                                friend.tech is your guide to the Web3 world.</div>
+                                          <h5
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h5__zubJl PlasmicAbout_h5__nle3K__Eqadm">
+                                                We make your digital assets work for you by building bridges between
+                                                Traditional finance and crypto; Banking and Trading; CeFi and DeFi.</h5>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__q54KQ__Q5DlR">
+                                                <span class="plasmic_default__all plasmic_default__span"
+                                                      style="font-weight:700">Trading solutions</span> unlock an
+                                                opportunity to benefit from market movements and multiply your digital
+                                                assets.
+
+                                                <span class="plasmic_default__all plasmic_default__span"
+                                                      style="font-weight:700">Crypto-backed loans</span> helps one get
+                                                cash for regular needs and keep hodling at the same time.
+
+                                                On top of that our <span
+                                                      class="plasmic_default__all plasmic_default__span"
+                                                      style="font-weight:700">Reward programs</span> are built to make
+                                                your Web3 journey interesting and engaging.</div>
+                                    </section>
+                                    <section
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_section__owSpL__2OFUr">
+                                          <h3
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicAbout_h3__z3M5B__9uUqd">
+                                                Team Experience</h3>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__nlkEs__scrZq">
+                                                Ask us something if you’d like to learn more about our products &amp;
+                                                services</div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicTeamItem_root__DQofO __wab_instance PlasmicAbout_teamItem__jNdXj__zacyn">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicTeamItem_freeBox__n10T__WobWX">
+                                                      <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee021996d9706c2de56b_ilya-p-500.jpeg"
+                                                            class="PlasmicAbout_img__wyfA7__DxUh_" alt=""
+                                                            loading="lazy" /></div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicTeamItem_freeBox___595At__gvNrl">
+                                                      <h6
+                                                            class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicTeamItem_h6__tublY__AjX6t">
+                                                            Alaksandar Daminik</h6>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicTeamItem_text__ii2Bu__ftp7z">
+                                                            CEO / CO-FOUNDER</div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicTeamItem_text__szJ7__IXf7Q">
+                                                            15+ years in FinTechs, Commercial Finance and Trading. A
+                                                            Board Member of the Crypto Valley Association (CVA Western
+                                                            Chapter Chair).</div>
+                                                </div>
+                                          </div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicTeamItem_root__DQofO __wab_instance PlasmicAbout_teamItem___95NCy__dYqFG">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicTeamItem_freeBox__n10T__WobWX">
+                                                      <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee029a14f64183e19cbd_alex-p-500.jpeg"
+                                                            class="PlasmicAbout_img__pKo0A__DTnka" alt=""
+                                                            loading="lazy" /></div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicTeamItem_freeBox___595At__gvNrl">
+                                                      <h6
+                                                            class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicAbout_h6__uqAV__7no0g">
+                                                            Alex Vinny </h6>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__gX8TN__01Xf6">
+                                                            HEAD OF PRODUCT</div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text___2YqW__tiGAb">
+                                                            Financial Apps expert. Former Senior UI/UX engineer of one
+                                                            of the leading trading Apps
+                                                            with 2.2 M clients across 110 countries.</div>
+                                                </div>
+                                          </div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicTeamItem_root__DQofO __wab_instance PlasmicAbout_teamItem__ns3JZ__bR_wn">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicTeamItem_freeBox__n10T__WobWX">
+                                                      <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee0244880580afdeb1e3_natalia-p-500.jpeg"
+                                                            class="PlasmicAbout_img__p1L6P___g3j0" alt=""
+                                                            loading="lazy" /></div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicTeamItem_freeBox___595At__gvNrl">
+                                                      <h6
+                                                            class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicAbout_h6__tk0T__KQ4IB">
+                                                            Natalia Romanova ‍</h6>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__xW7Ya__v40J_">
+                                                            EXEC. DIRECTOR</div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__jqb80__DwMC0">
+                                                            Experience in Accounting including commercial finance,
+                                                            cross-border transactions. Fully qualified accountant with
+                                                            specialization in financial management.</div>
+                                                </div>
+                                          </div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicTeamItem_root__DQofO __wab_instance PlasmicAbout_teamItem__jEhxq__TSLcI">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicTeamItem_freeBox__n10T__WobWX">
+                                                      <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61caee00663724200cfe63d3_igor-p-500.jpeg"
+                                                            class="PlasmicAbout_img__olufa__bXzNR" alt=""
+                                                            loading="lazy" /></div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicTeamItem_freeBox___595At__gvNrl">
+                                                      <h6
+                                                            class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicAbout_h6__av0Zf__AG9v_">
+                                                            Igor Bannikov </h6>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__vMr7__lCSA0">
+                                                            CRO</div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__rg7Jr__dntQc">
+                                                            Senior professional with experience of Compliance and Risk
+                                                            management within reputable Swiss Bank.Expert in compliance
+                                                            and regulations of investment and private banks.</div>
+                                                </div>
+                                          </div>
+                                    </section>
+                                    <section
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_section__ivYK___qAZb">
+                                          <h3
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicAbout_h3__aGqYs__oFW3z">
+                                                Our Partners</h3>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__f4Yf4__aUEeQ">
+                                                <div class="__wab_flex-container">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__i8Bc__OX_Fx">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__fxB__Qlhki">
+                                                                  <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61d83f692586c50155984c57_ledger-entreprise-solutions-logo-blue.svg"
+                                                                        class="PlasmicAbout_img___0ZnQm__SX3B9" alt=""
+                                                                        loading="lazy" /></div>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__qvjbt__f95wB">
+                                                                  <span class="plasmic_default__all plasmic_default__span"
+                                                                        style="font-weight:700">Secured custody.</span>
+                                                                  Custody management solution and $150 million pooled
+                                                                  crime insurance.</div>
+                                                      </div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__mggvD__tdAWi">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__vfOxK__pJTBe">
+                                                                  <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c14ba144d4cf7d4defdd8a_Magic-Square-New-Logo-Light-Backgrounds.svg"
+                                                                        class="PlasmicAbout_img__jQeVr__Q4_u8" alt=""
+                                                                        loading="lazy" /></div>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text___60I79__ssAO9">
+                                                                  <span class="plasmic_default__all plasmic_default__span"
+                                                                        style="font-weight:700">Web 3.0 Games and Apps.
+                                                                  </span>Discover Community-Vetted Blockchain and Crypto
+                                                                  Apps, Games, CeDeFi and more</div>
+                                                      </div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__cOcQ__3Cqnw">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__qrK7__0GvH2">
+                                                                  <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeed39f4004c58c2736d_fireblocks-logo.jpg"
+                                                                        class="PlasmicAbout_img__enb6G__QO7Uu" alt=""
+                                                                        loading="lazy" /></div>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__gxdOz__0fQlC">
+                                                                  <span class="plasmic_default__all plasmic_default__span"
+                                                                        style="font-weight:700">Asset Platform.</span>
+                                                                  Hundreds of crypto and digital asset businesses use
+                                                                  Fireblocks software and APIs to custody.</div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </section>
+                                    <section
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_section__iMtPq__5vYrO">
+                                          <h3
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicAbout_h3__bhenz__7kR1A">
+                                                Why You Choose friend.tech</h3>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__eoVtZ__A8LIy">
+                                                <div class="__wab_flex-container">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox___2CRlj__Gey0f">
+                                                            <div class="__wab_flex-container">
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__vw0ET__UysjF">
+                                                                        <div class="__wab_flex-container"><img
+                                                                                    src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8d257dae2a4e2440cd59c_security.svg"
+                                                                                    class="PlasmicAbout_img__byj38__2vf_a"
+                                                                                    alt="" loading="lazy" />
+                                                                              <h5
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h5__zubJl PlasmicAbout_h5___6Z0Rk__P7RfX">
+                                                                                    Secured crypto wallet</h5>
+                                                                        </div>
+                                                                  </div>
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__yDgGs__y2onr">
+                                                                        friend.tech uses Ledger Vault&#x27;s industry
+                                                                        leading information technology infrastructure to
+                                                                        securely control its crypto assets. Ledger Vault
+                                                                        provides security solutions and $150M pooled
+                                                                        crime insurance.</div>
+                                                            </div>
+                                                      </div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__itazX__i_SbZ">
+                                                            <div class="__wab_flex-container">
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__f8VJ__ja3X5">
+                                                                        <div class="__wab_flex-container"><img
+                                                                                    src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8d258cbc040c25a538123_safety.svg"
+                                                                                    class="PlasmicAbout_img__dVHs__A48VD"
+                                                                                    alt="" loading="lazy" />
+                                                                              <h5
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h5__zubJl PlasmicAbout_h5__fN4Od__9Xsse">
+                                                                                    Safety of fiat funds</h5>
+                                                                        </div>
+                                                                  </div>
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__iok1M__7RzLT">
+                                                                        friend.tech has its bank accounts at reputable
+                                                                        banks at Europe and Switzerland, We do not avoid
+                                                                        banks. We partner with them.</div>
+                                                            </div>
+                                                      </div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__lggyF__lTX_x">
+                                                            <div class="__wab_flex-container">
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__jsv5C__qTMSy">
+                                                                        <div class="__wab_flex-container"><img
+                                                                                    src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8d257e2439620ab3e210a_team.svg"
+                                                                                    class="PlasmicAbout_img__p3U1__1tAYq"
+                                                                                    alt="" loading="lazy" />
+                                                                              <h5
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h5__zubJl PlasmicAbout_h5__pfrJ4__Gxun7">
+                                                                                    Team experience</h5>
+                                                                        </div>
+                                                                  </div>
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__ij7R__mddR8">
+                                                                        friend.tech management and engineering teams
+                                                                        have 15+ years in FinTech and technology
+                                                                        development. We&#x27;re not an ICO backed!</div>
+                                                            </div>
+                                                      </div>
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__jPvP__26vVI">
+                                                            <div class="__wab_flex-container">
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox___9OfHr__9Mktu">
+                                                                        <div class="__wab_flex-container"><img
+                                                                                    src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d65135dca4f1a3669bf0aee_ftp.svg"
+                                                                                    class="PlasmicAbout_img___5I5Pg__E8p7c"
+                                                                                    alt="" loading="lazy" />
+                                                                              <h5
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h5__zubJl PlasmicAbout_h5___00Fq2__O67bm">
+                                                                                    Risk control</h5>
+                                                                        </div>
+                                                                  </div>
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__aiyot__eoHR2">
+                                                                        friend.tech team has extensive expertise in
+                                                                        currency exchange risk management. We know how
+                                                                        to save our funds so we know how to save yours.
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </section>
+                                    <section
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_section__dPnZu__GhBdZ">
+                                          <h4
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h4__mJsBf PlasmicAbout_h4___6YwQe__idobS">
+                                                Safety and Security</h4>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text___8J2OX__0Y66H">
+                                                All operations at friend.tech are 100% secure. friend.tech follows all
+                                                the industry best practices for IT security checks, data protection,
+                                                access rights, and data encryption.
+
+                                                friend.tech uses Ledger Vault&#x27;s industry leading information
+                                                technology infrastructure to securely control its crypto assets with a
+                                                multi-authorization self-custody management solution and $150 million
+                                                pooled crime insurance.</div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox___2Qwpk__H7odf">
+                                                <div class="__wab_flex-container">
+                                                      <div class="PlasmicAbout_img__ldJ__GoJjl __wab_img-wrapper"
+                                                            style="width:auto;height:auto"><img alt=""
+                                                                  aria-hidden="true" class="__wab_img-spacer-svg"
+                                                                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYwIiBoZWlnaHQ9IjczIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                                                                  style="width:auto;min-width:100%;max-width:100%;height:auto;min-height:100%" />
+                                                            <picture class="__wab_picture"><img alt="" loading="lazy"
+                                                                        class="__wab_img" decoding="async"
+                                                                        src="/plasmic/friends_tech_king/images/image2.png"
+                                                                        style="width:0;height:0" /></picture>
+                                                      </div>
+                                                      <div class="PlasmicAbout_img__tXnIu___6zrN __wab_img-wrapper"
+                                                            style="width:auto;height:auto"><img alt=""
+                                                                  aria-hidden="true" class="__wab_img-spacer-svg"
+                                                                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjUxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                                                                  style="width:auto;min-width:100%;max-width:100%;height:auto;min-height:100%" />
+                                                            <picture class="__wab_picture"><img alt="" loading="lazy"
+                                                                        class="__wab_img" decoding="async"
+                                                                        src="/plasmic/friends_tech_king/images/image3.png"
+                                                                        style="width:0;height:0" /></picture>
+                                                      </div>
+                                                      <div class="PlasmicAbout_img___0G7Qx__a8rUP __wab_img-wrapper"
+                                                            style="width:auto;height:auto"><img alt=""
+                                                                  aria-hidden="true" class="__wab_img-spacer-svg"
+                                                                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDkwIiBoZWlnaHQ9Ijk2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                                                                  style="width:auto;min-width:100%;max-width:100%;height:auto;min-height:100%" />
+                                                            <picture class="__wab_picture"><img alt="" loading="lazy"
+                                                                        class="__wab_img" decoding="async"
+                                                                        src="/plasmic/friends_tech_king/images/image4.png"
+                                                                        style="width:0;height:0" /></picture>
+                                                      </div>
+                                                      <div class="PlasmicAbout_img__cg0Jn__Lvm0H __wab_img-wrapper"
+                                                            style="width:auto;height:auto"><img alt=""
+                                                                  aria-hidden="true" class="__wab_img-spacer-svg"
+                                                                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQ1IiBoZWlnaHQ9IjU3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                                                                  style="width:auto;min-width:100%;max-width:100%;height:auto;min-height:100%" />
+                                                            <picture class="__wab_picture"><img alt="" loading="lazy"
+                                                                        class="__wab_img" decoding="async"
+                                                                        src="/plasmic/friends_tech_king/images/image5.png"
+                                                                        style="width:0;height:0" /></picture>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </section>
+                                    <section
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_section__q7F3Z__wRjpr">
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_freeBox__eWjSh___uEAc">
+                                                <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c825b85881a9fcf1edb652_screen_cta_2-p-800.png"
+                                                      class="PlasmicAbout_img___3O6D__PhLMc" alt="" loading="lazy" />
+                                          </div>
+                                          <h3
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h3__J05uR PlasmicAbout_h3__vMj1S___9Vt9">
+                                                Get Instant Crypto Loans</h3>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__xEYhm__bih_p">
+                                                Store, exchange stablecoins and crypto. Rewards, staking and loans
+                                                integrated. </div><a
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_button__nXZBI plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicButton3_root__OtVbw PlasmicButton3_rootcolor_white__vMQh_ __wab_instance PlasmicAbout_button3__iPtSq start-button"
+                                                href="/loan.html">
+                                                <div class="__wab_flex-container">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicButton3_contentContainer__Am3qG">
+                                                            <span
+                                                                  class="__wab_slot PlasmicButton3_slotTargetChildren__WDDvB PlasmicButton3_slotTargetChildrencolor_white__fkrIf">
+                                                                  <div
+                                                                        class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__lbku8__4VqR3">
+                                                                        Get Loan</div>
+                                                            </span></div>
+                                                </div>
+                                          </a>
+                                    </section>
+                                    <section
+                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_section__ypEp9__i8PMk">
+                                          <h6
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_h6__0xlWY PlasmicAbout_h6__sztNk__PVW3f">
+                                                FRIEND.TECH IS REGULATED IN SWITZERLAND AND EU
+                                          </h6>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicBackersLink_root__XQ1w7 __wab_instance PlasmicAbout_backersLink__aWdlr__QsvOI">
+                                                <a
+                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicBackersLink_link__2wzIs">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__n16Rq__LEwU8">
+                                                                  <div class="__wab_flex-container">
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__wcomu__97EpE">
+                                                                              <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d81e319d805196b051acc75_switzerland%20(1).svg"
+                                                                                    class="PlasmicAbout_img__rc3P5__vffdp"
+                                                                                    alt="" loading="lazy" /></div>
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__stuxG__KRIlD">
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__pswSj__ehQmU">
+                                                                                    friend.tech Regulated Financial
+                                                                                    Control.</div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </a></div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicBackersLink_root__XQ1w7 __wab_instance PlasmicAbout_backersLink___3OF6__2NLjx">
+                                                <a
+                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicBackersLink_link__2wzIs">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__n16Rq__LEwU8">
+                                                                  <div class="__wab_flex-container">
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__wcomu__97EpE">
+                                                                              <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5d81e344072bc3cc6157f8c7_european-union.svg"
+                                                                                    class="PlasmicAbout_img__nDOc5__NbDI_"
+                                                                                    alt="" loading="lazy" /></div>
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__stuxG__KRIlD">
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__a9Mex__JtVc2">
+                                                                                    friend.tech S.R.L. OAM Registration
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </a></div>
+                                          <div
+                                                class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicBackersLink_root__XQ1w7 __wab_instance PlasmicAbout_backersLink__oqBim__wd_Vj">
+                                                <a
+                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicBackersLink_link__2wzIs">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__n16Rq__LEwU8">
+                                                                  <div class="__wab_flex-container">
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__wcomu__97EpE">
+                                                                              <img src="https://assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c1a1e8c740e1e785d20c56_wallet.svg"
+                                                                                    class="PlasmicAbout_img__sedkK__oyBxX"
+                                                                                    alt="" loading="lazy" /></div>
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicBackersLink_freeBox__stuxG__KRIlD">
+                                                                              <div
+                                                                                    class="plasmic_friends_tech_king_all__5iY7n PlasmicAbout_text__on0M8__qzI3h">
+                                                                                    Partnership with regulated EU
+                                                                                    financial providers</div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </a></div>
+                                    </section>
+                              </div>
+                              <div
+                                    class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_root_reset__iYQG7 plasmic_friends_tech_king_plasmic_default_styles__pyjeQ plasmic_friends_tech_king_plasmic_tokens__L8P0k plasmic_antd_5_hostless_plasmic_tokens__L2NNN PlasmicFooter_footer__Cn_gT __wab_instance PlasmicAbout_footer__a2ykM">
+                                    <div class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_columns__JJrNC">
+                                          <div class="__wab_flex-container">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_column__QocF_">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_logoWrapper__jFceS">
+                                                                  <div class="__wab_flex-container"><a
+                                                                              class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link__xJRs__R3Igr"
+                                                                              href="/index.html">Friend.Tech</a>
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_text__p6I34__DVFqk">
+                                                                              Where Innovation Meets Finance.</div>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_smallColumns__iGAl9">
+                                                      <div class="__wab_flex-container">
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_column2__5SUdX">
+                                                                  <div class="__wab_flex-container">
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_content__JZtCz">
+                                                                              <div class="__wab_flex-container">
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_text__d2Ej7__BXfW7">
+                                                                                          Main Menu</div>
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_footerLinks__Kkacn">
+                                                                                          <div
+                                                                                                class="__wab_flex-container">
+                                                                                                <a class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link__9xp4F"
+                                                                                                      href="/loan.html">Loan</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link2__yND1o"
+                                                                                                      href="/waitlist">Waitlist</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link3__zDaHd"
+                                                                                                      href="/whitelist.html">Whitelist</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link4__vnO1S"
+                                                                                                      href="/mint">Mint</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link10__duop5"
+                                                                                                      href="/investment">Invest</a>
+                                                                                          </div>
+                                                                                    </div>
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_column3__Vm3YG">
+                                                                  <div class="__wab_flex-container">
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_content2__WLOxF">
+                                                                              <div class="__wab_flex-container">
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_text__oubL7__WbXqG">
+                                                                                          Services</div>
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_footerLinks2__JtMOj">
+                                                                                          <div
+                                                                                                class="__wab_flex-container">
+                                                                                                <a class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link5__lny0R"
+                                                                                                      href="/community">Join
+                                                                                                      Community</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link6__BBIKT"
+                                                                                                      href="/airdrop">Claim
+                                                                                                      Airdrop Bot</a><a
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link7__4RSiU"
+                                                                                                      href="/authenticate">Authenticate</a>
+                                                                                          </div>
+                                                                                    </div>
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                            <div
+                                                                  class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_column4__vZdHy">
+                                                                  <div class="__wab_flex-container">
+                                                                        <div
+                                                                              class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_content3__nSo9J">
+                                                                              <div class="__wab_flex-container">
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_text__q0B8__fliGW">
+                                                                                          Address</div>
+                                                                                    <div
+                                                                                          class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_footerLinks3__Jd_Qu">
+                                                                                          <div
+                                                                                                class="__wab_flex-container">
+                                                                                                <div
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_link8__E7OBS">
+                                                                                                      15 Railway Street
+                                                                                                      Antrim BT41 4AE UK
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_link9__4Pq5B">
+                                                                                                      Monday To Sunday
+                                                                                                      12:00 - 9:00 pm
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </div>
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_copyright__nA8AA">
+                                          <div class="__wab_flex-container">
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_group21__wmxoW">
+                                                      <div
+                                                            class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_frame2__MwS75">
+                                                            <div class="__wab_flex-container"><a
+                                                                        class="plasmic_friends_tech_king_all__5iY7n plasmic_friends_tech_king_a__m_UFi PlasmicFooter_link__mMnp___LoNa"
+                                                                        href="https://twitter.com/friendtech"><svg
+                                                                              xmlns="http://www.w3.org/2000/svg"
+                                                                              viewBox="0 0 24 24" fill="none"
+                                                                              height="1em" width="1em"
+                                                                              class="plasmic-default__svg plasmic_friends_tech_king_all__5iY7n PlasmicFooter_svg__s8qni"
+                                                                              role="img">
+                                                                              <path fill-rule="evenodd"
+                                                                                    clip-rule="evenodd"
+                                                                                    d="M19.783 3.918a4.73 4.73 0 00.79-.249c.28-.12.51-.263.876-.504A1 1 0 0123 4c0 1.08-.135 1.967-.447 2.746a5.47 5.47 0 01-1.071 1.674c-.187 3.363-1.16 6.004-2.648 8.005-1.543 2.074-3.595 3.402-5.759 4.146-2.157.741-4.436.907-6.478.656-2.029-.25-3.904-.921-5.211-1.938a1 1 0 01.755-1.78c1.286.185 2.524-.108 3.542-.526-.2-.109-.39-.227-.565-.348-.927-.643-1.676-1.514-2.012-2.188A1 1 0 013.4 13.2c-1.353-1.119-1.9-2.664-1.9-3.7a1 1 0 01.723-.96 7.357 7.357 0 01-.24-.887c-.266-1.287-.242-2.74.047-3.895A1 1 0 013.866 3.5c1.078 1.868 3.065 3.01 4.915 3.686.87.318 1.675.52 2.279.645.13-1.22.47-2.227.994-3.027a4.586 4.586 0 012.686-1.957c1.783-.48 3.76.067 5.043 1.071zm-9.035 5.89a18.334 18.334 0 01-2.654-.744c-1.357-.496-2.933-1.27-4.253-2.468.023.22.057.439.1.652.222 1.071.633 1.671 1.006 1.857a1 1 0 01.49 1.242c-.239.648-.869.7-1.441.558.46.69 1.288 1.378 2.668 1.609a1 1 0 01.032 1.966l-.87.175c.133.115.277.229.43.335.698.483 1.397.69 2.001.54a1 1 0 01.883 1.738c-.644.536-1.396.966-2.15 1.323-.353.168-.749.333-1.178.479.33.07.674.128 1.029.172 1.77.217 3.741.07 5.584-.563 1.836-.631 3.534-1.74 4.804-3.448 1.268-1.705 2.153-4.064 2.272-7.268a1 1 0 01.292-.67c.45-.45.821-.965 1.004-1.579-.32.1-.68.186-1.11.268a1 1 0 01-.894-.275c-.765-.764-2.277-1.267-3.533-.929A2.587 2.587 0 0013.727 5.9C13.315 6.53 13 7.51 13 9a1 1 0 01-.33.743c-.498.45-1.336.184-1.922.066z"
+                                                                                    fill="currentColor"></path>
+                                                                        </svg></a></div>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      class="plasmic_friends_tech_king_all__5iY7n PlasmicFooter_text__UN6Tw">
+                                                      Copyright © 2023 Friend Tech.</div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <script id="__NEXT_DATA__" type="application/json">
+            {
+                  "props": {
+                        "pageProps": {}
+                  },
+                  "page": "/about",
+                  "query": {},
+                  "buildId": "zVexvVgb-ELsxKBeay2Ew",
+                  "nextExport": true,
+                  "autoExport": true,
+                  "isFallback": false,
+                  "scriptLoader": []
+            }
+      </script>
+</body>
+
+</html>
